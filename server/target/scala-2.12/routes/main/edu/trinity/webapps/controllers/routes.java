@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/carolinecrossland/Desktop/workspace/sandwi.ch/server/conf/routes
-// @DATE:Thu Mar 28 17:19:11 CDT 2019
+// @SOURCE:/users/gvirgen/webApps/sandwi.ch/server/conf/routes
+// @DATE:Thu Apr 25 13:48:36 CDT 2019
 
 package edu.trinity.webapps.controllers;
 

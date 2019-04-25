@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="edu.trinity"
+		module="sandwich-s19-client$sources_javadoc"
+		revision="0.1.0-SNAPSHOT"
+		conf="runtime-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool, phantom-js-jetty"
+		date="20190425135328"/>
+	<dependencies>
+		<module organisation="org.scala-js" name="scalajs-dom_sjs0.6_2.12">
+			<revision name="0.9.5" status="release" pubdate="20180315165212" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scala-js.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+				<license name="MIT" url="http://opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="2941" time="0" location="/users/gvirgen/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.12/ivy-0.9.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-js/scalajs-dom_sjs0.6_2.12/0.9.5/scalajs-dom_sjs0.6_2.12-0.9.5.pom"/>
+				<caller organisation="edu.trinity" name="sandwich-s19-client$sources_javadoc" conf="compile, runtime-internal, runtime, optional" rev="0.9.5" rev-constraint-default="0.9.5" rev-constraint-dynamic="0.9.5" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scalajs-dom_sjs0.6_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="15006590" time="0" location="/users/gvirgen/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.12/docs/scalajs-dom_sjs0.6_2.12-0.9.5-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-js/scalajs-dom_sjs0.6_2.12/0.9.5/scalajs-dom_sjs0.6_2.12-0.9.5-javadoc.jar"/>
+					</artifact>
+					<artifact name="scalajs-dom_sjs0.6_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="221161" time="0" location="/users/gvirgen/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.12/srcs/scalajs-dom_sjs0.6_2.12-0.9.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-js/scalajs-dom_sjs0.6_2.12/0.9.5/scalajs-dom_sjs0.6_2.12-0.9.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="edu.trinity" name="sandwich-s19-shared_sjs0.6_2.12">
+			<revision name="0.1.0-SNAPSHOT" status="integration" pubdate="20190425135328" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
+				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
+				<caller organisation="edu.trinity" name="sandwich-s19-client$sources_javadoc" conf="compile, runtime-internal, runtime, optional" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-js" name="scalajs-library_2.12">
+			<revision name="0.6.23" status="release" pubdate="20180515181208" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scala-js.org/" extra-info.apiURL="http://www.scala-js.org/api/scalajs-library/0.6.23/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="1">
+				<license name="BSD New" url="https://github.com/scala-js/scala-js/blob/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2996" time="0" location="/users/gvirgen/.ivy2/cache/org.scala-js/scalajs-library_2.12/ivy-0.6.23.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-js/scalajs-library_2.12/0.6.23/scalajs-library_2.12-0.6.23.pom"/>
+				<caller organisation="edu.trinity" name="sandwich-s19-client$sources_javadoc" conf="compile, runtime-internal, runtime, optional" rev="0.6.23" rev-constraint-default="0.6.23" rev-constraint-dynamic="0.6.23" callerrev="0.1.0-SNAPSHOT" extra-info.apiURL="http://www.scala-js.org/api/scalajs-library/0.6.23/"/>
+				<artifacts>
+					<artifact name="scalajs-library_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="3001634" time="0" location="/users/gvirgen/.ivy2/cache/org.scala-js/scalajs-library_2.12/docs/scalajs-library_2.12-0.6.23-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-js/scalajs-library_2.12/0.6.23/scalajs-library_2.12-0.6.23-javadoc.jar"/>
+					</artifact>
+					<artifact name="scalajs-library_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="151996" time="0" location="/users/gvirgen/.ivy2/cache/org.scala-js/scalajs-library_2.12/srcs/scalajs-library_2.12-0.6.23-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-js/scalajs-library_2.12/0.6.23/scalajs-library_2.12-0.6.23-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.5" status="release" pubdate="20180316084746" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.5/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="3">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/users/gvirgen/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.5/scala-library-2.12.5.pom"/>
+				<caller organisation="edu.trinity" name="sandwich-s19-client$sources_javadoc" conf="compile, runtime-internal, runtime, optional" rev="2.12.5" rev-constraint-default="2.12.5" rev-constraint-dynamic="2.12.5" callerrev="0.1.0-SNAPSHOT" extra-info.apiURL="http://www.scala-lang.org/api/2.12.5/"/>
+				<artifacts>
+					<artifact name="scala-library" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="30565143" time="0" location="/users/gvirgen/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.12.5-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.5/scala-library-2.12.5-javadoc.jar"/>
+					</artifact>
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="992200" time="0" location="/users/gvirgen/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.5/scala-library-2.12.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
