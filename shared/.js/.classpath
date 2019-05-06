@@ -1,14 +1,14 @@
 <classpath>
-  <classpathentry output="-users-gvirgen-webApps-sandwi.ch-shared-src-main-scala" kind="src" path="-users-gvirgen-webApps-sandwi.ch-shared-src-main-scala"/>
+  <classpathentry output="-Users-ninaodegard-Documents-GitHub-sandwi.ch-shared-src-main-scala" kind="src" path="-Users-ninaodegard-Documents-GitHub-sandwi.ch-shared-src-main-scala"/>
   <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"></classpathentry>
-  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/org.scala-js/scalajs-library_2.12/srcs/scalajs-library_2.12-0.6.23-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/org.scala-js/scalajs-library_2.12/jars/scalajs-library_2.12-0.6.23.jar">
+  <classpathentry sourcepath="/Users/ninaodegard/.ivy2/cache/org.scala-js/scalajs-library_2.12/srcs/scalajs-library_2.12-0.6.23-sources.jar" kind="lib" path="/Users/ninaodegard/.ivy2/cache/org.scala-js/scalajs-library_2.12/jars/scalajs-library_2.12-0.6.23.jar">
     <attributes>
-      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/org.scala-js/scalajs-library_2.12/docs/scalajs-library_2.12-0.6.23-javadoc.jar!/"/>
+      <attribute name="javadoc_location" value="jar:file:/Users/ninaodegard/.ivy2/cache/org.scala-js/scalajs-library_2.12/docs/scalajs-library_2.12-0.6.23-javadoc.jar!/"/>
     </attributes>
   </classpathentry>
-  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/srcs/scalajs-test-interface_2.12-0.6.23-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/jars/scalajs-test-interface_2.12-0.6.23.jar">
+  <classpathentry sourcepath="/Users/ninaodegard/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/srcs/scalajs-test-interface_2.12-0.6.23-sources.jar" kind="lib" path="/Users/ninaodegard/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/jars/scalajs-test-interface_2.12-0.6.23.jar">
     <attributes>
-      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/docs/scalajs-test-interface_2.12-0.6.23-javadoc.jar!/"/>
+      <attribute name="javadoc_location" value="jar:file:/Users/ninaodegard/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/docs/scalajs-test-interface_2.12-0.6.23-javadoc.jar!/"/>
     </attributes>
   </classpathentry>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>

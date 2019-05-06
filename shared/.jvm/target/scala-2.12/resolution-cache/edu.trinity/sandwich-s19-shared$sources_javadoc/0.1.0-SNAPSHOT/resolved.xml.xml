@@ -4,7 +4,7 @@
 		module="sandwich-s19-shared$sources_javadoc"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20190506142116"
+		publication="20190506151852"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -32,7 +32,7 @@
 			<artifact name="scala-reflect" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
-		<dependency org="org.scala-lang" name="scala-library" rev="2.12.5" transitive="false" conf="compile->default,compile,runtime,default(compile),master;runtime->default,compile,runtime,default(compile),master;test->default,compile,runtime,default(compile),master;compile-internal->default,compile,runtime,default(compile),master;runtime-internal->default,compile,runtime,default(compile),master;test-internal->default,compile,runtime,default(compile),master;scala-tool->default,master(*),compile,runtime(*),master(compile),runtime,optional,optional(default),compile(*),master" info.apiURL="http://www.scala-lang.org/api/2.12.5/">
+		<dependency org="org.scala-lang" name="scala-library" rev="2.12.5" transitive="false" conf="compile->default,compile,runtime,default(compile),master;runtime->default,compile,runtime,default(compile),master;test->default,compile,runtime,default(compile),master;compile-internal->default,compile,runtime,default(compile),master;runtime-internal->default,compile,runtime,default(compile),master;test-internal->default,compile,runtime,default(compile),master;scala-tool->default,compile,runtime(*),master(compile),runtime,optional,optional(default),compile(*),master" info.apiURL="http://www.scala-lang.org/api/2.12.5/">
 			<artifact name="scala-library" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<artifact name="scala-library" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>

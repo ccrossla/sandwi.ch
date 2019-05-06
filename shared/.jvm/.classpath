@@ -1,5 +1,5 @@
 <classpath>
-  <classpathentry output="-users-gvirgen-webApps-sandwi.ch-shared-src-main-scala" kind="src" path="-users-gvirgen-webApps-sandwi.ch-shared-src-main-scala"/>
+  <classpathentry output="-Users-ninaodegard-Documents-GitHub-sandwi.ch-shared-src-main-scala" kind="src" path="-Users-ninaodegard-Documents-GitHub-sandwi.ch-shared-src-main-scala"/>
   <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"></classpathentry>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
   <classpathentry kind="output" path="bin"/>
