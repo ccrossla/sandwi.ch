@@ -7,7 +7,7 @@ GET        /                             controllers.Application.index
 
 #Sandwich home
 
-GET
+#GET
 
 # Prefix must match `play.assets.urlPrefix`
 GET        /assets/*file                 controllers.Assets.at(file)
