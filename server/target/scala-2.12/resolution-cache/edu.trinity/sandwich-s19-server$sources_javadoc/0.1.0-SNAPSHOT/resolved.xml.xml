@@ -4,7 +4,7 @@
 		module="sandwich-s19-server$sources_javadoc"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20190425135326"
+		publication="20190506142111"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -34,6 +34,16 @@
 	<publications>
 	</publications>
 	<dependencies>
+		<dependency org="com.typesafe.play" name="play-jdbc-api_2.12" rev="2.7.0" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master" info.apiURL="https://www.playframework.com/documentation/2.7.0/api/scala/index.html">
+			<artifact name="play-jdbc-api_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="play-jdbc-api_2.12" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.seleniumhq.selenium" name="selenium-java" rev="3.141.59" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="selenium-java" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="selenium-java" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
 		<dependency org="org.seleniumhq.selenium" name="selenium-api" rev="3.141.59" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
 			<artifact name="selenium-api" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<artifact name="selenium-api" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
@@ -44,6 +54,16 @@
 			<artifact name="commons-lang3" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
+		<dependency org="com.typesafe.play" name="cachecontrol_2.12" rev="1.1.5" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="cachecontrol_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="cachecontrol_2.12" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.scalatest" name="scalatest_2.12" rev="3.0.5" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="scalatest_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="scalatest_2.12" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
 		<dependency org="io.netty" name="netty-transport-native-epoll" rev="4.1.31.Final" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
 			<artifact name="netty-transport-native-epoll" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<artifact name="netty-transport-native-epoll" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
@@ -52,6 +72,21 @@
 		<dependency org="javax.activation" name="javax.activation-api" rev="1.2.0" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master;docs->compile,runtime(*),master(compile),runtime,compile(*),master">
 			<artifact name="javax.activation-api" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<artifact name="javax.activation-api" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="com.typesafe.play" name="play-ws-standalone-json_2.12" rev="2.0.1" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="play-ws-standalone-json_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="play-ws-standalone-json_2.12" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.seleniumhq.selenium" name="selenium-safari-driver" rev="3.141.59" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="selenium-safari-driver" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="selenium-safari-driver" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="com.typesafe.slick" name="slick_2.12" rev="3.3.0" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="slick_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="slick_2.12" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
 		<dependency org="com.typesafe.play" name="play-guice_2.12" rev="2.7.0" transitive="false" conf="compile->default,compile,runtime,default(compile),master;runtime->default,compile,runtime,default(compile),master;test->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;compile-internal->default,compile,runtime,default(compile),master;runtime-internal->default,compile,runtime,default(compile),master;test-internal->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master" info.apiURL="https://www.playframework.com/documentation/2.7.0/api/scala/index.html">
@@ -89,6 +124,11 @@
 			<artifact name="guava" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
+		<dependency org="com.typesafe.play" name="play-ws-standalone_2.12" rev="2.0.1" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="play-ws-standalone_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="play-ws-standalone_2.12" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
 		<dependency org="org.apache.commons" name="commons-exec" rev="1.3" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
 			<artifact name="commons-exec" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<artifact name="commons-exec" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
@@ -97,6 +137,11 @@
 		<dependency org="com.google.j2objc" name="j2objc-annotations" rev="1.1" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master;docs->compile,runtime(*),master(compile),runtime,compile(*),master">
 			<artifact name="j2objc-annotations" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<artifact name="j2objc-annotations" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="com.typesafe.play" name="play-slick_2.12" rev="4.0.0" transitive="false" conf="compile->default,compile,runtime,default(compile),master;runtime->default,compile,runtime,default(compile),master;test->default,compile,runtime,default(compile),master;compile-internal->default,compile,runtime,default(compile),master;runtime-internal->default,compile,runtime,default(compile),master;test-internal->default,compile,runtime,default(compile),master">
+			<artifact name="play-slick_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="play-slick_2.12" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
 		<dependency org="edu.trinity" name="sandwich-s19-shared_2.12" rev="0.1.0-SNAPSHOT" transitive="false" conf="compile->compile,default(compile);runtime->compile,default(compile);test->compile,default(compile);compile-internal->compile,default(compile);runtime-internal->compile,default(compile);test-internal->compile,default(compile)">
@@ -114,14 +159,39 @@
 			<artifact name="netty-resolver" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
+		<dependency org="com.typesafe.play" name="shaded-asynchttpclient" rev="2.0.1" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="shaded-asynchttpclient" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="shaded-asynchttpclient" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.scalactic" name="scalactic_2.12" rev="3.0.5" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="scalactic_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="scalactic_2.12" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
 		<dependency org="org.eclipse.jetty" name="jetty-io" rev="9.4.12.v20180830" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
 			<artifact name="jetty-io" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<artifact name="jetty-io" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
+		<dependency org="com.zaxxer" name="HikariCP" rev="3.2.0" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="HikariCP" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="HikariCP" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
 		<dependency org="com.typesafe.play" name="play-akka-http-server_2.12" rev="2.7.0" transitive="false" conf="compile->default,compile,runtime,default(compile),master;runtime->default,compile,runtime,default(compile),master;test->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;compile-internal->default,compile,runtime,default(compile),master;runtime-internal->default,compile,runtime,default(compile),master;test-internal->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;docs->compile,runtime(*),master(compile),runtime,compile(*),master" info.apiURL="https://www.playframework.com/documentation/2.7.0/api/scala/index.html">
 			<artifact name="play-akka-http-server_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<artifact name="play-akka-http-server_2.12" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="com.typesafe.slick" name="slick-hikaricp_2.12" rev="3.3.0" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="slick-hikaricp_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="slick-hikaricp_2.12" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="com.typesafe.play" name="shaded-oauth" rev="2.0.1" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="shaded-oauth" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="shaded-oauth" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
 		<dependency org="org.slf4j" name="jul-to-slf4j" rev="1.7.25" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master;docs->compile,runtime(*),master(compile),runtime,compile(*),master">
@@ -147,6 +217,16 @@
 		<dependency org="org.seleniumhq.selenium" name="selenium-support" rev="3.141.59" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
 			<artifact name="selenium-support" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<artifact name="selenium-support" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.seleniumhq.selenium" name="selenium-opera-driver" rev="3.141.59" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="selenium-opera-driver" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="selenium-opera-driver" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="com.typesafe.play" name="play-ws-standalone-xml_2.12" rev="2.0.1" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="play-ws-standalone-xml_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="play-ws-standalone-xml_2.12" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
 		<dependency org="org.specs2" name="specs2-common_2.12" rev="4.3.6" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
@@ -249,6 +329,11 @@
 			<artifact name="scala-collection-compat_2.12" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
+		<dependency org="com.typesafe.slick" name="slick-codegen_2.12" rev="3.3.0" transitive="false" conf="compile->default,compile,runtime,default(compile),master;runtime->default,compile,runtime,default(compile),master;test->default,compile,runtime,default(compile),master;compile-internal->default,compile,runtime,default(compile),master;runtime-internal->default,compile,runtime,default(compile),master;test-internal->default,compile,runtime,default(compile),master">
+			<artifact name="slick-codegen_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="slick-codegen_2.12" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
 		<dependency org="org.eclipse.jetty" name="jetty-xml" rev="9.4.12.v20180830" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
 			<artifact name="jetty-xml" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<artifact name="jetty-xml" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
@@ -279,6 +364,10 @@
 			<artifact name="play-netty-server_2.12" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
+		<dependency org="mysql" name="mysql-connector-java" rev="6.0.6" transitive="false" conf="compile->default,compile,runtime,default(compile),master;runtime->default,compile,runtime,default(compile),master;test->default,compile,runtime,default(compile),master;compile-internal->default,compile,runtime,default(compile),master;runtime-internal->default,compile,runtime,default(compile),master;test-internal->default,compile,runtime,default(compile),master">
+			<artifact name="mysql-connector-java" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
 		<dependency org="ch.qos.logback" name="logback-classic" rev="1.2.3" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
 			<artifact name="logback-classic" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<artifact name="logback-classic" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
@@ -297,6 +386,11 @@
 		<dependency org="io.netty" name="netty-buffer" rev="4.1.31.Final" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
 			<artifact name="netty-buffer" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<artifact name="netty-buffer" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.scalatestplus.play" name="scalatestplus-play_2.12" rev="4.0.0" transitive="false" conf="test->default,compile,runtime,default(compile),master;test-internal->default,compile,runtime,default(compile),master">
+			<artifact name="scalatestplus-play_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="scalatestplus-play_2.12" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
 		<dependency org="com.typesafe.akka" name="akka-http-core_2.12" rev="10.1.7" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master;docs->compile,runtime(*),master(compile),runtime,compile(*),master" info.apiURL="http://doc.akka.io/api/akka-http/10.1.7/">
@@ -342,6 +436,11 @@
 		<dependency org="com.typesafe.netty" name="netty-reactive-streams" rev="2.0.0" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
 			<artifact name="netty-reactive-streams" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<artifact name="netty-reactive-streams" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="com.typesafe.play" name="play-ws_2.12" rev="2.7.0" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master" info.apiURL="https://www.playframework.com/documentation/2.7.0/api/scala/index.html">
+			<artifact name="play-ws_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="play-ws_2.12" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
 		<dependency org="org.codehaus.mojo" name="animal-sniffer-annotations" rev="1.17" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master;docs->compile,runtime(*),master(compile),runtime,compile(*),master">
@@ -394,6 +493,11 @@
 			<artifact name="fluentlenium-core" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
+		<dependency org="org.seleniumhq.selenium" name="selenium-ie-driver" rev="3.141.59" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="selenium-ie-driver" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="selenium-ie-driver" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
 		<dependency org="org.eclipse.jetty.websocket" name="websocket-api" rev="9.4.12.v20180830" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
 			<artifact name="websocket-api" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<artifact name="websocket-api" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
@@ -402,6 +506,11 @@
 		<dependency org="org.apache.httpcomponents" name="httpclient" rev="4.5.6" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
 			<artifact name="httpclient" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<artifact name="httpclient" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="com.typesafe.play" name="play-ahc-ws_2.12" rev="2.7.0" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master" info.apiURL="https://www.playframework.com/documentation/2.7.0/api/scala/index.html">
+			<artifact name="play-ahc-ws_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="play-ahc-ws_2.12" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
 		<dependency org="io.netty" name="netty-handler" rev="4.1.13.Final" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
@@ -444,6 +553,11 @@
 			<artifact name="specs2-junit_2.12" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
+		<dependency org="com.codeborne" name="phantomjsdriver" rev="1.4.4" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="phantomjsdriver" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="phantomjsdriver" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
 		<dependency org="com.typesafe.play" name="play-omnidoc_2.12" rev="2.7.0" transitive="false" conf="docs->default,compile,runtime,default(compile),master">
 			<artifact name="play-omnidoc_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<artifact name="play-omnidoc_2.12" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
@@ -454,9 +568,19 @@
 			<artifact name="jcl-over-slf4j" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
+		<dependency org="javax.cache" name="cache-api" rev="1.0.0" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="cache-api" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="cache-api" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
 		<dependency org="com.typesafe.play" name="play-functional_2.12" rev="2.7.0" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master;docs->compile,runtime(*),master(compile),runtime,compile(*),master">
 			<artifact name="play-functional_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<artifact name="play-functional_2.12" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.seleniumhq.selenium" name="selenium-chrome-driver" rev="3.141.59" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="selenium-chrome-driver" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="selenium-chrome-driver" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
 		<dependency org="com.typesafe.akka" name="akka-slf4j_2.12" rev="2.5.19" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master;docs->compile,runtime(*),master(compile),runtime,compile(*),master" info.apiURL="http://doc.akka.io/api/akka/2.5.19">
@@ -467,6 +591,11 @@
 		<dependency org="com.typesafe.akka" name="akka-actor_2.12" rev="2.5.19" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master;docs->compile,runtime(*),master(compile),runtime,compile(*),master" info.apiURL="http://doc.akka.io/api/akka/2.5.19">
 			<artifact name="akka-actor_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<artifact name="akka-actor_2.12" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.joda" name="joda-convert" rev="1.9.2" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="joda-convert" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="joda-convert" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
 		<dependency org="com.typesafe.play" name="play-specs2_2.12" rev="2.7.0" transitive="false" conf="test->default,compile,runtime,default(compile),master;test-internal->default,compile,runtime,default(compile),master" info.apiURL="https://www.playframework.com/documentation/2.7.0/api/scala/index.html">
@@ -602,6 +731,11 @@
 			<artifact name="htmlunit-driver" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
+		<dependency org="org.seleniumhq.selenium" name="selenium-edge-driver" rev="3.141.59" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="selenium-edge-driver" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="selenium-edge-driver" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
 		<dependency org="xml-apis" name="xml-apis" rev="1.4.01" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
 			<artifact name="xml-apis" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<artifact name="xml-apis" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
@@ -625,6 +759,11 @@
 		<dependency org="com.typesafe.play" name="play-server_2.12" rev="2.7.0" transitive="false" conf="compile->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;runtime->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;test->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;compile-internal->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;runtime-internal->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;test-internal->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;docs->compile,runtime(*),master(compile),runtime,compile(*),master" info.apiURL="https://www.playframework.com/documentation/2.7.0/api/scala/index.html">
 			<artifact name="play-server_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<artifact name="play-server_2.12" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="com.typesafe.play" name="play-ahc-ws-standalone_2.12" rev="2.0.1" transitive="false" conf="test->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="play-ahc-ws-standalone_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<artifact name="play-ahc-ws-standalone_2.12" type="doc" ext="jar" conf="*" e:classifier="javadoc"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
 		<dependency org="com.fasterxml.jackson.core" name="jackson-databind" rev="2.9.8" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master;docs->compile,runtime(*),master(compile),runtime,compile(*),master">

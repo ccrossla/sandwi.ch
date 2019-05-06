@@ -4,7 +4,7 @@
 		module="sandwich-s19-server_2.12"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20190425135320"
+		publication="20190506142043"
 	>
 		<description>
 		sandwich-S19-Server
@@ -54,6 +54,10 @@
 		<dependency org="com.typesafe.play" name="filters-helpers_2.12" rev="2.7.0" conf="compile->default(compile)"/>
 		<dependency org="com.vmunier" name="scalajs-scripts_2.12" rev="1.1.2" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-guice_2.12" rev="2.7.0" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-slick_2.12" rev="4.0.0" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.slick" name="slick-codegen_2.12" rev="3.3.0" conf="compile->default(compile)"/>
+		<dependency org="mysql" name="mysql-connector-java" rev="6.0.6" conf="compile->default(compile)"/>
+		<dependency org="org.scalatestplus.play" name="scalatestplus-play_2.12" rev="4.0.0" conf="test->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-specs2_2.12" rev="2.7.0" conf="test->default(compile)"/>
 	</dependencies>
 </ivy-module>

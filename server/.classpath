@@ -259,6 +259,37 @@
       <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/docs/guice-assistedinject-4.2.2-javadoc.jar!/"/>
     </attributes>
   </classpathentry>
+  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/com.typesafe.play/play-slick_2.12/srcs/play-slick_2.12-4.0.0-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/com.typesafe.play/play-slick_2.12/jars/play-slick_2.12-4.0.0.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/com.typesafe.play/play-slick_2.12/docs/play-slick_2.12-4.0.0-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/com.typesafe.slick/slick_2.12/srcs/slick_2.12-3.3.0-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/com.typesafe.slick/slick_2.12/bundles/slick_2.12-3.3.0.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/com.typesafe.slick/slick_2.12/docs/slick_2.12-3.3.0-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.12/srcs/slick-hikaricp_2.12-3.3.0-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.12/bundles/slick-hikaricp_2.12-3.3.0.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.12/docs/slick-hikaricp_2.12-3.3.0-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/com.zaxxer/HikariCP/srcs/HikariCP-3.2.0-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/com.zaxxer/HikariCP/bundles/HikariCP-3.2.0.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/com.zaxxer/HikariCP/docs/HikariCP-3.2.0-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.12/srcs/play-jdbc-api_2.12-2.7.0-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.12/jars/play-jdbc-api_2.12-2.7.0.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.12/docs/play-jdbc-api_2.12-2.7.0-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/com.typesafe.slick/slick-codegen_2.12/srcs/slick-codegen_2.12-3.3.0-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/com.typesafe.slick/slick-codegen_2.12/jars/slick-codegen_2.12-3.3.0.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/com.typesafe.slick/slick-codegen_2.12/docs/slick-codegen_2.12-3.3.0-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/mysql/mysql-connector-java/srcs/mysql-connector-java-6.0.6-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-6.0.6.jar"/>
   <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/com.typesafe.play/play-test_2.12/srcs/play-test_2.12-2.7.0-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/com.typesafe.play/play-test_2.12/jars/play-test_2.12-2.7.0.jar">
     <attributes>
       <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/com.typesafe.play/play-test_2.12/docs/play-test_2.12-2.7.0-javadoc.jar!/"/>
@@ -345,11 +376,7 @@
       <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/org.fluentlenium/fluentlenium-core/docs/fluentlenium-core-3.7.1-javadoc.jar!/"/>
     </attributes>
   </classpathentry>
-  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/org.seleniumhq.selenium/selenium-support/srcs/selenium-support-3.141.59-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/org.seleniumhq.selenium/selenium-support/jars/selenium-support-3.141.59.jar">
-    <attributes>
-      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/org.seleniumhq.selenium/selenium-support/docs/selenium-support-3.141.59-javadoc.jar!/"/>
-    </attributes>
-  </classpathentry>
+  <classpathentry kind="lib" path="/users/gvirgen/.ivy2/cache/org.seleniumhq.selenium/selenium-support/jars/selenium-support-3.141.59.jar"/>
   <classpathentry kind="lib" path="/users/gvirgen/.ivy2/cache/org.seleniumhq.selenium/selenium-api/jars/selenium-api-3.141.59.jar"/>
   <classpathentry kind="lib" path="/users/gvirgen/.ivy2/cache/org.seleniumhq.selenium/selenium-remote-driver/jars/selenium-remote-driver-3.141.59.jar"/>
   <classpathentry kind="lib" path="/users/gvirgen/.ivy2/cache/org.apache.commons/commons-exec/jars/commons-exec-1.3.jar"/>
@@ -490,9 +517,90 @@
       <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/org.eclipse.jetty.websocket/websocket-api/docs/websocket-api-9.4.12.v20180830-javadoc.jar!/"/>
     </attributes>
   </classpathentry>
-  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/org.seleniumhq.selenium/selenium-firefox-driver/srcs/selenium-firefox-driver-3.141.59-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/org.seleniumhq.selenium/selenium-firefox-driver/jars/selenium-firefox-driver-3.141.59.jar">
+  <classpathentry kind="lib" path="/users/gvirgen/.ivy2/cache/org.seleniumhq.selenium/selenium-firefox-driver/jars/selenium-firefox-driver-3.141.59.jar"/>
+  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/org.scalatestplus.play/scalatestplus-play_2.12/srcs/scalatestplus-play_2.12-4.0.0-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/org.scalatestplus.play/scalatestplus-play_2.12/jars/scalatestplus-play_2.12-4.0.0.jar">
     <attributes>
-      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/org.seleniumhq.selenium/selenium-firefox-driver/docs/selenium-firefox-driver-3.141.59-javadoc.jar!/"/>
+      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/org.scalatestplus.play/scalatestplus-play_2.12/docs/scalatestplus-play_2.12-4.0.0-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/org.scalatest/scalatest_2.12/srcs/scalatest_2.12-3.0.5-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/org.scalatest/scalatest_2.12/bundles/scalatest_2.12-3.0.5.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/org.scalatest/scalatest_2.12/docs/scalatest_2.12-3.0.5-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/org.scalactic/scalactic_2.12/srcs/scalactic_2.12-3.0.5-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/org.scalactic/scalactic_2.12/bundles/scalactic_2.12-3.0.5.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/org.scalactic/scalactic_2.12/docs/scalactic_2.12-3.0.5-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/org.seleniumhq.selenium/selenium-java/srcs/selenium-java-3.141.59-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/org.seleniumhq.selenium/selenium-java/jars/selenium-java-3.141.59.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/org.seleniumhq.selenium/selenium-java/docs/selenium-java-3.141.59-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="lib" path="/users/gvirgen/.ivy2/cache/org.seleniumhq.selenium/selenium-chrome-driver/jars/selenium-chrome-driver-3.141.59.jar"/>
+  <classpathentry kind="lib" path="/users/gvirgen/.ivy2/cache/org.seleniumhq.selenium/selenium-edge-driver/jars/selenium-edge-driver-3.141.59.jar"/>
+  <classpathentry kind="lib" path="/users/gvirgen/.ivy2/cache/org.seleniumhq.selenium/selenium-ie-driver/jars/selenium-ie-driver-3.141.59.jar"/>
+  <classpathentry kind="lib" path="/users/gvirgen/.ivy2/cache/org.seleniumhq.selenium/selenium-opera-driver/jars/selenium-opera-driver-3.141.59.jar"/>
+  <classpathentry kind="lib" path="/users/gvirgen/.ivy2/cache/org.seleniumhq.selenium/selenium-safari-driver/jars/selenium-safari-driver-3.141.59.jar"/>
+  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/com.codeborne/phantomjsdriver/srcs/phantomjsdriver-1.4.4-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/com.codeborne/phantomjsdriver/jars/phantomjsdriver-1.4.4.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/com.codeborne/phantomjsdriver/docs/phantomjsdriver-1.4.4-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/com.typesafe.play/play-ws_2.12/srcs/play-ws_2.12-2.7.0-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/com.typesafe.play/play-ws_2.12/jars/play-ws_2.12-2.7.0.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/com.typesafe.play/play-ws_2.12/docs/play-ws_2.12-2.7.0-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/com.typesafe.play/play-ws-standalone_2.12/srcs/play-ws-standalone_2.12-2.0.1-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/com.typesafe.play/play-ws-standalone_2.12/jars/play-ws-standalone_2.12-2.0.1.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/com.typesafe.play/play-ws-standalone_2.12/docs/play-ws-standalone_2.12-2.0.1-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/com.typesafe.play/play-ws-standalone-xml_2.12/srcs/play-ws-standalone-xml_2.12-2.0.1-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/com.typesafe.play/play-ws-standalone-xml_2.12/jars/play-ws-standalone-xml_2.12-2.0.1.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/com.typesafe.play/play-ws-standalone-xml_2.12/docs/play-ws-standalone-xml_2.12-2.0.1-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/com.typesafe.play/play-ws-standalone-json_2.12/srcs/play-ws-standalone-json_2.12-2.0.1-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/com.typesafe.play/play-ws-standalone-json_2.12/jars/play-ws-standalone-json_2.12-2.0.1.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/com.typesafe.play/play-ws-standalone-json_2.12/docs/play-ws-standalone-json_2.12-2.0.1-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/com.typesafe.play/play-ahc-ws_2.12/srcs/play-ahc-ws_2.12-2.7.0-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/com.typesafe.play/play-ahc-ws_2.12/jars/play-ahc-ws_2.12-2.7.0.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/com.typesafe.play/play-ahc-ws_2.12/docs/play-ahc-ws_2.12-2.7.0-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/com.typesafe.play/play-ahc-ws-standalone_2.12/srcs/play-ahc-ws-standalone_2.12-2.0.1-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/com.typesafe.play/play-ahc-ws-standalone_2.12/jars/play-ahc-ws-standalone_2.12-2.0.1.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/com.typesafe.play/play-ahc-ws-standalone_2.12/docs/play-ahc-ws-standalone_2.12-2.0.1-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/com.typesafe.play/cachecontrol_2.12/srcs/cachecontrol_2.12-1.1.5-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/com.typesafe.play/cachecontrol_2.12/jars/cachecontrol_2.12-1.1.5.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/com.typesafe.play/cachecontrol_2.12/docs/cachecontrol_2.12-1.1.5-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/org.joda/joda-convert/srcs/joda-convert-1.9.2-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.9.2.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/org.joda/joda-convert/docs/joda-convert-1.9.2-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/com.typesafe.play/shaded-asynchttpclient/srcs/shaded-asynchttpclient-2.0.1-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/com.typesafe.play/shaded-asynchttpclient/jars/shaded-asynchttpclient-2.0.1.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/com.typesafe.play/shaded-asynchttpclient/docs/shaded-asynchttpclient-2.0.1-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/com.typesafe.play/shaded-oauth/srcs/shaded-oauth-2.0.1-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/com.typesafe.play/shaded-oauth/jars/shaded-oauth-2.0.1.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/com.typesafe.play/shaded-oauth/docs/shaded-oauth-2.0.1-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/javax.cache/cache-api/srcs/cache-api-1.0.0-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/javax.cache/cache-api/jars/cache-api-1.0.0.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/users/gvirgen/.ivy2/cache/javax.cache/cache-api/docs/cache-api-1.0.0-javadoc.jar!/"/>
     </attributes>
   </classpathentry>
   <classpathentry sourcepath="/users/gvirgen/.ivy2/cache/com.typesafe.play/play-specs2_2.12/srcs/play-specs2_2.12-2.7.0-sources.jar" kind="lib" path="/users/gvirgen/.ivy2/cache/com.typesafe.play/play-specs2_2.12/jars/play-specs2_2.12-2.7.0.jar">
