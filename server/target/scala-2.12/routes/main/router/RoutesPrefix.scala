@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/users/gvirgen/webApps/sandwi.ch/server/conf/routes
-// @DATE:Thu Apr 25 13:48:36 CDT 2019
+// @DATE:Mon May 06 14:28:53 CDT 2019
 
 
 package router {
