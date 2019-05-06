@@ -1,0 +1,20 @@
+@helper.form(action = controllers.routes.Application.userLogin()) {
+		@helper.CSRF.formField
+		@helper.inputText(userLoginForm("username"))
+		@helper.inputText(userLoginForm("password"))
+		<div class="form-actions">
+			<button type="submit">Login</button>
+		</div>
+	}
+	
+	
+	<em> If you are a new to sandwich, please use the form below </em>
+	
+	@helper.form(action = controllers.routes.Application.createUser()) {
+		@helper.CSRF.formField
+		@helper.inputText(userLoginForm("username"))
+		@helper.inputText(userLoginForm("password"))
+		<div class="form-actions">
+			<button type="submit">Create User</button>
+		</div>
+	}

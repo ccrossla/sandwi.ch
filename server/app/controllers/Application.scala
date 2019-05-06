@@ -45,12 +45,45 @@ class Application @Inject() (protected val dbConfigProvider: DatabaseConfigProvi
     "username" -> nonEmptyText(1, 12),
     "password" -> nonEmptyText(1, 12))(UserLogin.apply)(UserLogin.unapply))
 
-  // other forms???
+    
+  val createUser = Form(mapping(
+      "username" -> nonEmptyText(1, 12),
+      "password" -> nonEmptyText(1, 12))(UserLogin.apply)(UserLogin.unapply))
+  
+      
+   // other forms???
     
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     
-     def userWelcome = Action { implicit request =>
-    Ok(views.html.userHomePage(userLog))
+    // def userWelcome = Action { implicit request =>
+   // Ok(views.html.userHomePage(userLog, createUser))
+ // }
+  
+ /* 
+  def userLogin = Action.async { implicit request =>
+    userLog.bindFromRequest.fold(
+      formWithErrors => Future.successful(BadRequest(views.html.userWelcome(formWithErrors))),
+      userData => {
+        val userInfoFut = models.TaskQueries.addUser(userData.userName, userData.password, db)
+      
+        userInfoFut.map(userInfo => Redirect(routes.TaskDBController.taskLoad).withSession("username" -> userData.userName))
+      })
   }
+  
+  def createUser = Action.async { implicit request =>
+    userLog.bindFromRequest.fold(
+      formWithErrors => Future.successful(BadRequest(views.html.userWelcome(formWithErrors))),
+      userData => {
+        val userInfoFut = models.TaskQueries.addUser(userData.userName, userData.password, db)
+      
+        userInfoFut.map(userInfo => Redirect(routes.TaskDBController.taskLoad).withSession("username" -> userData.userName))
+      })
+  }
+ */ 
+ // def userLogout = Action { implicit request =>
+ //   Redirect(routes.Application.userLogin()).withNewSession
+ // }
+
+  //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     
 }

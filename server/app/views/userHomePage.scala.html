@@ -1,20 +1,12 @@
 @* userWelcome Template File
 @(name: Option[String]) *@
 
-@(userLoginForm: Form[controllers.UserLogin])(implicit request: MessagesRequestHeader, flash:Flash)
+@(userLoginForm: Form[controllers.UserLogin], createUserForm: Form[controllers.UserLogin])(implicit request: MessagesRequestHeader, flash:Flash)
 
 @main("Login for Sandwich") {
 
 <h2 id="login">Login for Sandwich</h2>
 	<em>Note: If you do not have a log in click Create User and enter a username and password to be added to the system</em>
 	
-	@helper.form(action = controllers.routes.Application.userLogin()) {
-		@helper.CSRF.formField
-		@helper.inputText(userLoginForm("username"))
-		@helper.inputText(userLoginForm("password"))
-		<div class="form-actions">
-			<button type="submit">Login</button>
-			<button type="submit">Create User</button>
-		</div>
-	}
+	
 }
