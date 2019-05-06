@@ -1,0 +1,14 @@
+CREATE TABLE user (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	username VARCHAR(50) NOT NULL,
+	password VARCHAR(50) NOT NULL);
+CREATE TABLE sandwiches (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	uid INT NOT NULL,
+	ingredients varchar(15),
+	numofLikes INT,
+	isfavorite BOOLEAN,
+	FOREIGN KEY (uid)
+	REFERENCES user(id)
+	ON DELETE CASCADE);
+
