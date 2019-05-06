@@ -1,5 +1,0 @@
-[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/users/gvirgen/webApps/sandwi.ch/server/conf/routes,/users/gvirgen/webApps/sandwi.ch/server/target/scala-2.12/classes/routes)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/users/gvirgen/webApps/sandwi.ch/server/conf/application.conf,/users/gvirgen/webApps/sandwi.ch/server/target/scala-2.12/classes/application.conf)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/users/gvirgen/webApps/sandwi.ch/server/conf/heroku.conf,/users/gvirgen/webApps/sandwi.ch/server/target/scala-2.12/classes/heroku.conf)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/users/gvirgen/webApps/sandwi.ch/server/conf/private.conf,/users/gvirgen/webApps/sandwi.ch/server/target/scala-2.12/classes/private.conf)[0m
