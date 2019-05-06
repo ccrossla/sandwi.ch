@@ -7,7 +7,7 @@ GET        /                             controllers.Application.index
 
 #Sandwich home
 
-GET
+POST   /userLogin               controllers.Application.userLogin
 
 # Prefix must match `play.assets.urlPrefix`
 GET        /assets/*file                 controllers.Assets.at(file)
