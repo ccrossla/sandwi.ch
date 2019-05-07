@@ -1,1 +1,37 @@
+<<<<<<< HEAD
 [0m[[0m[0mdebug[0m] [0m[0mNo changes[0m
+=======
+<<<<<<< HEAD
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating /usr/java/jdk1.8.0_172-amd64/jre/lib/rt.jar: class java.lang.String now provided by /usr/java/jdk1.8.0_144/jre/lib/rt.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	removed:Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set(/usr/java/jdk1.8.0_172-amd64/jre/lib/rt.jar)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set(/users/gvirgen/webApps/sandwi.ch/shared/src/main/scala/edu/trinity/webapps/shared/SharedMessages.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll sources are invalidated.[0m
+[0m[[0m[0mdebug[0m] [0m[0mRecompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 1 Scala source to /users/gvirgen/webApps/sandwi.ch/shared/.js/target/scala-2.12/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.2.5:compile for Scala 2.12.5[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.2.5:compile for Scala 2.12.5[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 20853e49 for Scala compiler version 2.12.5[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-Xplugin:/users/gvirgen/.ivy2/cache/org.scala-js/scalajs-compiler_2.12.5/jars/scalajs-compiler_2.12.5-0.6.23.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/usr/java/jdk1.8.0_144/jre/lib/resources.jar:/usr/java/jdk1.8.0_144/jre/lib/rt.jar:/usr/java/jdk1.8.0_144/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_144/jre/lib/jsse.jar:/usr/java/jdk1.8.0_144/jre/lib/jce.jar:/usr/java/jdk1.8.0_144/jre/lib/charsets.jar:/usr/java/jdk1.8.0_144/jre/lib/jfr.jar:/usr/java/jdk1.8.0_144/jre/classes:/users/gvirgen/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/users/gvirgen/webApps/sandwi.ch/shared/.js/target/scala-2.12/classes:/users/gvirgen/.ivy2/cache/org.scala-js/scalajs-library_2.12/jars/scalajs-library_2.12-0.6.23.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 3.151133754 s[0m
+[0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m
+=======
+[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m
+>>>>>>> 3546253985087e78e2f28421957b99aa6fe6b0a7
+>>>>>>> 355f9acf4f3ee0461521171e79635fa2b9a894d7
