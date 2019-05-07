@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [0m[[0m[0mdebug[0m] [0m[0mInvalidating /usr/java/jdk1.8.0_172-amd64/jre/lib/rt.jar: class java.lang.String now provided by /usr/java/jdk1.8.0_144/jre/lib/rt.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
@@ -26,3 +27,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m	/users/gvirgen/webApps/sandwi.ch/shared/.jvm/target/scala-2.12/classes[0m
 [0m[[0m[0mdebug[0m] [0m[0mScala compilation took 3.010921553 s[0m
 [0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m
+=======
+[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m
+>>>>>>> 3546253985087e78e2f28421957b99aa6fe6b0a7
