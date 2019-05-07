@@ -4,11 +4,7 @@
 		module="sandwich-s19-shared_2.12"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-<<<<<<< HEAD
-		publication="20190506153031"
-=======
-		publication="20190506173929"
->>>>>>> 3a42c1411714949e83ac0649628695e0bdba6a45
+		publication="20190506183233"
 	>
 		<description>
 		sandwich-S19-Shared
