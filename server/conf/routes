@@ -14,6 +14,8 @@ GET    /                        controllers.Application.index
 #GET    /userWelcome             controllers.Application.userWelcome
 #GET    /userLogout              controllers.Application.userLogout
 
+#All Sandwiches page
+GET		/allSandwiches			 controllers.SandwichList.allSandwiches
 
 
 # Prefix must match `play.assets.urlPrefix`
