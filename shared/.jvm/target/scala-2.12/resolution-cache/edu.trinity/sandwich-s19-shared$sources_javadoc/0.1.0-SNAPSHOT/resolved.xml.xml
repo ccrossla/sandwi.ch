@@ -4,7 +4,7 @@
 		module="sandwich-s19-shared$sources_javadoc"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20190506181814"
+		publication="20190507151005"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

@@ -5,10 +5,25 @@ CREATE TABLE user (
 CREATE TABLE sandwiches (
 	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	uid INT NOT NULL,
-	ingredients varchar(15),
-	numofLikes INT,
-	isfavorite BOOLEAN,
+	name varchar(15),
 	FOREIGN KEY (uid)
 	REFERENCES user(id)
 	ON DELETE CASCADE);
-
+CREATE TABLE likes (
+	sid INT NOT NULL,
+	FOREIGN KEY (sid)
+	REFERENCES sandwiches(id),	
+	uid INT NOT NULL,
+	FOREIGN KEY (uid)
+	REFERENCES user(id),
+	UNIQUE(sid, uid));
+CREATE TABLE ingredients (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	name varchar(15));
+CREATE TABLE SandwichIngredient (
+	sid INT NOT NULL,
+	Iid INT NOT NULL,
+	FOREIGN KEY (sid)
+	REFERENCES sandwiches(id),	
+	FOREIGN KEY (Iid)
+	REFERENCES ingredients(id));
