@@ -32,20 +32,21 @@
                 </tr>
             </thead>
             <tbody id="table-data">
-			
+
   				<tr>
-  					<td class="sandwich">sandwich</td>
-  					<td class="username">username</td>
-  					<td class="ingredients">ingredients</td>
-  					<td class="likes">likes</td>
+  					<td class="sandwich">Name</td>
+  					<td class="username">Username</td>
+  					<td class="ingredients">Ingredients</td>
+  					<td class="likes">Likes</td>
   					<td class="likeMe">
   						<form action="/delete8" method="POST">
   							<input type="hidden" name="uid" value="name">
 							<input type="submit" name="delete" value="Delete">
+							<button type="submit" name="like" value="Like" class="btn btn-success">Like!</button>
 						</form>
   					</td>
   				</tr>
-	
+
             </tbody>
     	</table>
 	</div>

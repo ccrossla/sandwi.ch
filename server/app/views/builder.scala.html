@@ -1,0 +1,20 @@
+@* builder Template File *@
+@(uid:String, name:String, ingredients: Seq[String])
+@main("sandwich builder"){
+	
+	<h1>Sandwich Builder</h1>
+	<table>
+	@ingredients.map { i =>
+		<tr>
+			<td>
+				<button onclick="addingredient"> </button>
+			<td>@i</td>
+			
+	
+	}
+	</table>
+	
+	
+	
+		
+}
