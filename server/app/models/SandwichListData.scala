@@ -18,7 +18,7 @@ object SandwichListData {
       val ingredientFuture = db.run {
         (for {
           sing <- Sandwichingredient
-          if sing.iid === sRow.head.id
+          if sing.sid === sRow.head.id
           ing <- Ingredients
           if ing.id === sing.iid
         } yield ing.name).result
