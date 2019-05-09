@@ -7,7 +7,15 @@
 		revision="0.1.0-SNAPSHOT"
 		conf="optional"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool, phantom-js-jetty"
+<<<<<<< HEAD
+		date="20190509130131"/>
+=======
+<<<<<<< HEAD
+		date="20190509125835"/>
+=======
 		date="20190509130237"/>
+>>>>>>> 0a6dbb355fe4174905c4c353bd38c6164f9850c1
+>>>>>>> 68e87794f8d781aa6cc876ee263b0ba60a27411d
 	<dependencies>
 	</dependencies>
 </ivy-report>
