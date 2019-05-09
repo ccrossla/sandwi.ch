@@ -1,4 +1,5 @@
 [0m[[0m[0minfo[0m] [0m[0mUpdating sharedJS...[0m
+<<<<<<< HEAD
 [0m[[0m[0mdebug[0m] [0m[0m:: resolving dependencies :: edu.trinity#sandwich-s19-shared_sjs0.6_2.12;0.1.0-SNAPSHOT[0m
 [0m[[0m[0mdebug[0m] [0m[0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool, phantom-js-jetty][0m
 [0m[[0m[0mdebug[0m] [0m[0m	validate = true[0m
@@ -921,3 +922,5 @@
 [0m[[0m[0mdebug[0m] [0m[0m	report for edu.trinity#sandwich-s19-shared_sjs0.6_2.12;0.1.0-SNAPSHOT phantom-js-jetty produced in /users/qbutterf/sandwi.ch/shared/.js/target/scala-2.12/resolution-cache/reports/edu.trinity-sandwich-s19-shared_sjs0.6_2.12-phantom-js-jetty.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	resolve done (417ms resolve - 62ms download)[0m
 [0m[[0m[0minfo[0m] [0m[0mDone updating.[0m
+=======
+>>>>>>> 0a6dbb355fe4174905c4c353bd38c6164f9850c1

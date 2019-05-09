@@ -8,7 +8,7 @@ import Tables._
 import scala.concurrent.ExecutionContext
 
 object SandwichListData {
-  def getSandwiches(db: Database)(implicit ec: ExecutionContext):Future[Seq[Sandwich]] = {
+  def getSandwiches(db: Database)(implicit ec: ExecutionContext): Future[Seq[Sandwich]] = {
     val sandwichFuture = db.run {
       (for {
         s <- Sandwiches
@@ -24,20 +24,22 @@ object SandwichListData {
         } yield ing.name).result
       }
       val likesFuture = db.run {
-       Likes.filter(_.sid === sRow.head.id).size.result
+        Likes.filter(_.sid === sRow.head.id).size.result
       }
       val userFuture = db.run {
         User.filter(_.id === sRow.head.uid).result
       }
-      for {
-        ings <- ingredientFuture
-        likes <- likesFuture
-        users <- userFuture
-      } yield Sandwich(sRow.head.name, users.head.username, ings, likes)
+      Future.sequence(sRow.map { sand =>
+        for {
+          ings <- ingredientFuture
+          likes <- likesFuture
+          users <- userFuture
+        } yield Sandwich(sand.name, users.head.username, ings, likes)
+      })
     }
   }
-  
-  def likeSandwich(db: Database, sid: Int, uid: Int)(implicit ec: ExecutionContext):Future[Boolean] = {
+
+  def likeSandwich(db: Database, sid: Int, uid: Int)(implicit ec: ExecutionContext): Future[Boolean] = {
     val existsf = likeExists(db, sid, uid)
     existsf.flatMap { exists =>
       if (exists == None) {
@@ -49,8 +51,8 @@ object SandwichListData {
       }
     }
   }
-  
-  def likeExists(db: Database, sid: Int, uid: Int)(implicit ec: ExecutionContext):Future[Option[Int]] = {
+
+  def likeExists(db: Database, sid: Int, uid: Int)(implicit ec: ExecutionContext): Future[Option[Int]] = {
     val ids = db.run {
       (for {
         l <- Likes
