@@ -5,7 +5,6 @@ import javax.inject._
 import play.api.mvc._
 import play.api.data._
 import play.api.data.Forms._
-import javax.inject._
 import scala.concurrent.Future
 
 import models._
@@ -31,15 +30,12 @@ class Application @Inject() (protected val dbConfigProvider: DatabaseConfigProvi
 
   //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<<<<<<< HEAD
+
   def index = Action { implicit request =>
     Ok(views.html.userHomePage(userLog, createUser))
     //Ok(views.html.index(SharedMessages.itWorks))
 
   }
-=======
- 
->>>>>>> 91cd0ccbb07b08761601f40d6a7a283c182795f6
 
   //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -67,7 +63,7 @@ class Application @Inject() (protected val dbConfigProvider: DatabaseConfigProvi
       userData => {
         val userInfoFut = models.LoginQueries.checkUser(db,userData.username, userData.password)
           userInfoFut.map(userInfo => userInfo match {
-            case Some(userInfo) => Redirect(routes.Application.index).withSession("username" -> userData.username, "uid" -> userInfo.toString)
+            case Some(userInfo) => Redirect(routes.HomePageApp.index).withSession("username" -> userData.username, "uid" -> userInfo.toString)
             case None => BadRequest(views.html.userHomePage(userLog, createUser))
           })
       })
@@ -80,7 +76,7 @@ class Application @Inject() (protected val dbConfigProvider: DatabaseConfigProvi
         val userInfoFut = models.LoginQueries.addUser(db, userData.username, userData.password)
         userInfoFut.map(userInfo => userInfo match {
           case false => BadRequest(views.html.userHomePage(userLog, createUser))
-          case true => Redirect(routes.Application.index).withSession("username" -> userData.username, "uid" -> userInfo.toString)
+          case true => Redirect(routes.HomePageApp.index).withSession("username" -> userData.username, "uid" -> userInfo.toString)
         })
       })
   }

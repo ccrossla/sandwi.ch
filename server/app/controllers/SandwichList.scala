@@ -1,7 +1,6 @@
 package controllers
 
 import javax.inject._
-
 import play.api.mvc._
 import models._
 import play.api.db.slick.DatabaseConfigProvider

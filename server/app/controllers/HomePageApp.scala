@@ -1,6 +1,5 @@
 package controllers
 
-import javax.inject._
 import edu.trinity.webapps.shared.SharedMessages
 import play.api.mvc._
 import play.api.data._
@@ -9,12 +8,6 @@ import javax.inject._
 import scala.concurrent.Future
 import models.Tables._
 import slick.jdbc.MySQLProfile.api._
-
-
-
-import models._
-//import Tables._
-
 import play.api.db.slick.DatabaseConfigProvider
 import play.api.db.slick.HasDatabaseConfigProvider
 
