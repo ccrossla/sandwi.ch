@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [0m[[0m[0mdebug[0m] [0m[0mInvalidating /usr/java/jdk1.8.0_172-amd64/jre/lib/rt.jar: class java.lang.String now provided by /usr/java/jdk1.8.0_144/jre/lib/rt.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
@@ -34,3 +35,6 @@
 [0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mAll newly invalidated classes after taking into account (previously) recompiled classes:Set()[0m
+=======
+[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m
+>>>>>>> 68e87794f8d781aa6cc876ee263b0ba60a27411d
