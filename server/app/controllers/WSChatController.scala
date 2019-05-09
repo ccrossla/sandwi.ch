@@ -29,7 +29,7 @@ class WSChatController @Inject()(cc: ControllerComponents)(implicit system: Acto
 
   
 
-  def index = Action { implicit request =>
+  def chat = Action { implicit request =>
 
     Ok(views.html.chatPage())
 
