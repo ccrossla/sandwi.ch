@@ -8,11 +8,11 @@ GET    /                        controllers.Application.index
 #Sandwich home
 
 
-#POST   /userLogin               controllers.Application.userLogin
-#POST   /userLogin               controllers.Application.createUser
+POST   /userLogin               controllers.Application.userLogin
+POST   /createAUser             controllers.Application.createAUser
 
-#GET    /userWelcome             controllers.Application.userWelcome
-#GET    /userLogout              controllers.Application.userLogout
+GET    /userWelcome             controllers.Application.userWelcome
+GET    /userLogout              controllers.Application.userLogout
 
 
 
