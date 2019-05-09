@@ -1,9 +1,5 @@
 <<<<<<< HEAD
-/users/dflood/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.5.jar
-=======
-<<<<<<< HEAD
-/users/gvirgen/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.5.jar
-=======
 /Users/ninaodegard/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.5.jar
->>>>>>> 3546253985087e78e2f28421957b99aa6fe6b0a7
->>>>>>> 355f9acf4f3ee0461521171e79635fa2b9a894d7
+=======
+/users/dflood/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.5.jar
+>>>>>>> 0499d77746be5e1d8276d797b16bd1a68b5bfc97

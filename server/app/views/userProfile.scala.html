@@ -1,8 +1,52 @@
 @* userProfile Template File *@
-@(message: String)
+@(uid:String)
 
 @main("User Profile") {
-	<div>
-		
+	<div class="sandwichList">
+		<div>
+        	<h2>Sandwich Creations</h2>
+        </div>
+        <div>
+        	<table class="table-buttons">
+            	<tr>
+                    <th class="table-buttons">Sort by:
+                    	<select id="sort-by">
+                        	<option value="SandwichName">Sandwich Name A-Z</option>
+                            <option value="UserName">User Name A-Z</option>
+                            <option value="NumLikes"># Likes</option>
+                        </select>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <table>
+        	<thead>
+            	<tr id="table-header">
+                	<b>
+                    	<th><h3>Sandwich</h3></th>
+                    	<th><h3>Username</h3></th>
+                        <th><h3>Ingredients</h3></th>
+                        <th><h3>Likes</h3></th>
+                        <th><h3>Like!</h3></th>
+                    </b>
+                </tr>
+            </thead>
+            <tbody id="table-data">
+			
+  				<tr>
+  					<td class="sandwich">sandwich</td>
+  					<td class="username">username</td>
+  					<td class="ingredients">ingredients</td>
+  					<td class="likes">likes</td>
+  					<td class="likeMe">
+  						<form action="/delete8" method="POST">
+  							<input type="hidden" name="uid" value="name">
+							<input type="submit" name="delete" value="Delete">
+						</form>
+  					</td>
+  				</tr>
+	
+            </tbody>
+    	</table>
 	</div>
 }

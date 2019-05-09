@@ -5,7 +5,7 @@ CREATE TABLE user (
 CREATE TABLE sandwiches (
 	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	uid INT NOT NULL,
-	name varchar(15),
+	name varchar(15) NOT NULL,
 	FOREIGN KEY (uid)
 	REFERENCES user(id)
 	ON DELETE CASCADE);
@@ -19,7 +19,7 @@ CREATE TABLE likes (
 	UNIQUE(sid, uid));
 CREATE TABLE ingredients (
 	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	name varchar(15));
+	name varchar(15) NOT NULL);
 CREATE TABLE SandwichIngredient (
 	sid INT NOT NULL,
 	Iid INT NOT NULL,

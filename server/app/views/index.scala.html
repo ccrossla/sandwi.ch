@@ -1,11 +1,22 @@
-@(message: String)
+@(bestSandwiches: Seq[(String, Seq[Int], String)])
+
 
 @main("Play with Scala.js") {
 	<div>
-		<h2>Play and Scala.js share a same message</h2>
+		<h1>Welcome to Sandwi.ch!</h1>
 		<ul>
-  			<li>Play shouts out: <em>@message</em></li>
-  			<li>Scala.js shouts out: <em id="scalajsShoutOut"></em></li>
+  			<li>Featured Sandwiches: </li>
 		</ul>
+		
+			@for(x<-bestSandwiches) {
+				<h2>@x._1</h2>
+				<ol>
+				@for(y <- x._2) {
+					<li>@models.Featured.parseI(y)</li>
+				}
+				</ol>
+				<p>made by: @x._3 </p>
+			}
+			
 	</div>
 }
