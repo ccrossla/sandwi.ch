@@ -5,7 +5,6 @@ import javax.inject._
 import play.api.mvc._
 import play.api.data._
 import play.api.data.Forms._
-import javax.inject._
 import scala.concurrent.Future
 
 import models._
