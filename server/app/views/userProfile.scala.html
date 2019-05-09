@@ -1,5 +1,5 @@
 @* userProfile Template File *@
-@(uid:String, sandwiches:Seq[(String, Seq[Int], String, Int, Int)])
+@(uid:String, sandwiches:Seq[(String, Seq[Int], String, Int, Int)])(implicit request: MessagesRequestHeader)
 @main("User Profile") {
 	<div class="sandwichList">
 		<div>
@@ -26,6 +26,7 @@
   					<td class="likes">@s._4</td>
   					<td class="likeMe">
   						<form action="/likeSandwich" method="POST">
+  						@helper.CSRF.formField
   							<input type="hidden" name="uid" value="@uid">
   							<input type="hidden" name="sid" value="@s._5">
 							<button type="submit" name="like" value="Like" class="btn btn-success">Like!</button>

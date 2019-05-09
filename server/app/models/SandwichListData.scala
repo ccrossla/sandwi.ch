@@ -52,7 +52,7 @@ object SandwichListData {
           Likes += LikesRow(sid, uid)
         }).map(_ > 0)
       } else {
-        return Future.successful(false)
+         Future.successful(false)
       }
     }
   }

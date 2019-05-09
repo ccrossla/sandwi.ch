@@ -11,8 +11,8 @@ import slick.jdbc.JdbcProfile
 import scala.concurrent.Future
 
 @Singleton
-class SandwichList @Inject() (protected val dbConfigProvider: DatabaseConfigProvider, cc: ControllerComponents)(implicit ec: ExecutionContext)
-  extends AbstractController(cc) with HasDatabaseConfigProvider[JdbcProfile] {
+class SandwichList @Inject() (protected val dbConfigProvider: DatabaseConfigProvider, cc: MessagesControllerComponents)(implicit ec: ExecutionContext)
+  extends MessagesAbstractController(cc) with HasDatabaseConfigProvider[JdbcProfile] {
   
   def allSandwiches = Action.async { implicit request =>
     //size of database for num
@@ -31,9 +31,9 @@ class SandwichList @Inject() (protected val dbConfigProvider: DatabaseConfigProv
       val fb = models.SandwichListData.likeSandwich(db, sid.toInt, uid.toInt)
       fb.map { b =>
         if (b) {
-          Redirect(routes.SandwichList.allSandwiches)
+          Redirect(routes.SandwichList.allSandwiches).withSession("uid"->uid)
         } else {
-          Redirect(routes.SandwichList.allSandwiches)
+          Redirect(routes.SandwichList.allSandwiches).withSession("uid"->uid)
         }
       }
     }.getOrElse(Future.successful(Redirect(routes.SandwichList.allSandwiches)))

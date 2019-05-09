@@ -31,20 +31,20 @@ object Featured {
   
 
   def parseI(i: Int): String = {
-    if(i==1) return "White Bread"
-    else if(i==2) return "Wheat Bread"
-    else if(i==3) return "Tomato"
-    else if(i==4) return "Lettuce"
-    else if(i==5) return "Cheddar"
-    else if(i==6) return "Swiss"
-    else if(i==7) return "Salt"
-    else if(i==8) return "Pepper"
-    else if(i==9) return "Oil"
-    else if(i==10) return "Mayonnaise"
-    else if(i==11) return "Mustard"
-    else if(i==12) return "Chicken"
-    else if(i==13) return "Ham"
-    else return "Turkey"
+    if(i==1)  "White Bread"
+    else if(i==2)  "Wheat Bread"
+    else if(i==3)  "Tomato"
+    else if(i==4)  "Lettuce"
+    else if(i==5)  "Cheddar"
+    else if(i==6)  "Swiss"
+    else if(i==7)  "Salt"
+    else if(i==8)  "Pepper"
+    else if(i==9)  "Oil"
+    else if(i==10) "Mayonnaise"
+    else if(i==11)  "Mustard"
+    else if(i==12) "Chicken"
+    else if(i==13)  "Ham"
+    else  "Turkey"
   }
 
 
