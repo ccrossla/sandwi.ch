@@ -10,12 +10,6 @@ import scala.concurrent.ExecutionContext
 import slick.jdbc.JdbcProfile
 
 @Singleton
-
-class SandwichList @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
-  // def allSandwiches = Action { implicit request =>
-   // Ok(views.html.userProfile("testing"))
-  //}
-
 class SandwichList @Inject() (protected val dbConfigProvider: DatabaseConfigProvider, cc: ControllerComponents)(implicit ec: ExecutionContext)
   extends AbstractController(cc) with HasDatabaseConfigProvider[JdbcProfile] {
    def allSandwiches =  Action.async { implicit request =>
@@ -25,5 +19,4 @@ class SandwichList @Inject() (protected val dbConfigProvider: DatabaseConfigProv
     }
    }
 
-}
 }
