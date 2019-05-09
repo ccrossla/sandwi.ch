@@ -8,7 +8,7 @@ import models._
 
 @Singleton
 class SandwichList @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
-   def allSandwiches = Action { implicit request =>
-    Ok(views.html.userProfile("testing"))
-  }
+  // def allSandwiches = Action { implicit request =>
+   // Ok(views.html.userProfile("testing"))
+  //}
 }
