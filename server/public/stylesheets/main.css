@@ -74,6 +74,10 @@ table {
     width: 100%;
 }
 
+ol {
+	text-align: center;
+}
+
 table,
 th,
 td {
@@ -96,7 +100,32 @@ td {
     text-align: center;
     display: inline-block;
 }
+.features {
+	width: 100%;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+}
 
+.sandwich {	
+	height: 300px;
+	width: 50%;
+}
+
+.ingredients{
+	text-align: left;
+}
+.scrolley {
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.likey{
+	color: #ee9528; 
+}
 th {
 	color: white;
 }

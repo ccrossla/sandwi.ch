@@ -20,7 +20,7 @@
             <tbody id="table-data">
 			@for(s <- sandwiches) {
   				<tr>
-  					<td class="sandwich">@s._1</td>
+  					<td class="sandwich1">@s._1</td>
   					<td class="username">@s._3</td>
   					<td class="ingredients">@s._2.map(f => models.Featured.parseI(f)).mkString(", ")</td>
   					<td class="likes">@s._4</td>
