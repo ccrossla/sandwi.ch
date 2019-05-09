@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+scalac -classpath /users/dflood/LeWebApps/sandwi.ch/shared/.jvm/target/scala-2.12/classes -bootclasspath /usr/java/jdk1.8.0_144/jre/lib/resources.jar:/usr/java/jdk1.8.0_144/jre/lib/rt.jar:/usr/java/jdk1.8.0_144/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_144/jre/lib/jsse.jar:/usr/java/jdk1.8.0_144/jre/lib/jce.jar:/usr/java/jdk1.8.0_144/jre/lib/charsets.jar:/usr/java/jdk1.8.0_144/jre/lib/jfr.jar:/usr/java/jdk1.8.0_144/jre/classes:/users/dflood/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.5.jar /users/dflood/LeWebApps/sandwi.ch/shared/src/main/scala/edu/trinity/webapps/shared/SharedMessages.scala
+=======
+<<<<<<< HEAD
 scalac -classpath /users/gvirgen/webApps/sandwi.ch/shared/.jvm/target/scala-2.12/classes -bootclasspath /usr/java/jdk1.8.0_144/jre/lib/resources.jar:/usr/java/jdk1.8.0_144/jre/lib/rt.jar:/usr/java/jdk1.8.0_144/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_144/jre/lib/jsse.jar:/usr/java/jdk1.8.0_144/jre/lib/jce.jar:/usr/java/jdk1.8.0_144/jre/lib/charsets.jar:/usr/java/jdk1.8.0_144/jre/lib/jfr.jar:/usr/java/jdk1.8.0_144/jre/classes:/users/gvirgen/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.5.jar /users/gvirgen/webApps/sandwi.ch/shared/src/main/scala/edu/trinity/webapps/shared/SharedMessages.scala
 =======
 <<<<<<< HEAD
@@ -19,3 +22,4 @@ scalac -bootclasspath /usr/java/jdk1.8.0_172-amd64/jre/lib/resources.jar:/usr/ja
 >>>>>>> caba776e0880995bccda9348e3958a2f04b69603
 >>>>>>> 02a010e8272dcb6b7a5037277e8efd65fa6e601d
 >>>>>>> 91cd0ccbb07b08761601f40d6a7a283c182795f6
+>>>>>>> 3f879ebea0ba40bcfcb8192f7d0e33ff39cc6cf1

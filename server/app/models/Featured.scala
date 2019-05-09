@@ -16,12 +16,12 @@ case class sandLikes(sandwich: Int, tLikes: Int)
 object Featured {
  
   
-  def getBestSandwichIngredientsWithCreators (db: Database)(implicit ec: ExecutionContext): Future[Seq[(String, Seq[Int], String)]] = {
-    val s = getBestSandwichesU(db, 4)
+  def getBestSandwichIngredientsWithCreators (db: Database, num: Int)(implicit ec: ExecutionContext): Future[Seq[(String, Seq[Int], String, Int, Int)]] = {
+    val s = getBestSandwichesU(db, num)
   s.flatMap{f => 
        val nameIngreds =(for (x<-f) yield {
-        val ingreds = getIngredients(x._1, db)
-        ingreds.map(i => (x._2, i, x._3))
+        val ingreds = getIngredients(x._1._1, db)
+        ingreds.map(i => (x._1._2, i, x._1._3,  x._2, x._1._1))
       })
       Future.sequence(nameIngreds)
       }
@@ -48,14 +48,14 @@ object Featured {
   }
 
 
-  def getBestSandwichesU(db: Database, num: Int)(implicit ec: ExecutionContext): Future[Seq[(Int, String, String)]] = {
+  def getBestSandwichesU(db: Database, num: Int)(implicit ec: ExecutionContext): Future[Seq[((Int, String, String), Int)]] = {
     val sandFuture = getSandwichesWithMaker(db)
     sandFuture.flatMap { f =>
           val sandwichAndLikes = (for (x <- f) yield {
             val qf = getLikes(x._1, db).map(f=> f.length)
             qf.map(q => (x, q))
           })
-          Future.sequence(sandwichAndLikes).map(_.sortBy(t => -t._2).take(num).map(_._1)) 
+          Future.sequence(sandwichAndLikes).map(_.sortBy(t => -t._2).take(num)) 
     }
   }
   
