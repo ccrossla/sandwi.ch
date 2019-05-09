@@ -7,15 +7,50 @@
 		revision="0.1.0-SNAPSHOT"
 		conf="test-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool, phantom-js-jetty"
+<<<<<<< HEAD
 		date="20190509130814"/>
+=======
+<<<<<<< HEAD
+		date="20190509130539"/>
+=======
+<<<<<<< HEAD
+		date="20190509130131"/>
+=======
+<<<<<<< HEAD
+		date="20190509125835"/>
+=======
+		date="20190509130237"/>
+>>>>>>> 0a6dbb355fe4174905c4c353bd38c6164f9850c1
+>>>>>>> 68e87794f8d781aa6cc876ee263b0ba60a27411d
+>>>>>>> caba776e0880995bccda9348e3958a2f04b69603
+>>>>>>> 02a010e8272dcb6b7a5037277e8efd65fa6e601d
 	<dependencies>
 		<module organisation="org.scala-js" name="scalajs-test-interface_2.12">
 			<revision name="0.6.23" status="release" pubdate="20180515181432" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scala-js.org/" extra-info.apiURL="http://www.scala-js.org/api/scalajs-test-interface/0.6.23/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
 				<license name="BSD New" url="https://github.com/scala-js/scala-js/blob/master/LICENSE"/>
+<<<<<<< HEAD
+				<metadata-artifact status="no" details="" size="3032" time="0" location="/users/qbutterf/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/ivy-0.6.23.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-js/scalajs-test-interface_2.12/0.6.23/scalajs-test-interface_2.12-0.6.23.pom"/>
+=======
 				<metadata-artifact status="no" details="" size="3032" time="0" location="/users/dflood/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/ivy-0.6.23.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-js/scalajs-test-interface_2.12/0.6.23/scalajs-test-interface_2.12-0.6.23.pom"/>
+>>>>>>> caba776e0880995bccda9348e3958a2f04b69603
 				<caller organisation="edu.trinity" name="sandwich-s19-shared_sjs0.6_2.12" conf="test, compile, provided, test-internal, runtime, optional" rev="0.6.23" rev-constraint-default="0.6.23" rev-constraint-dynamic="0.6.23" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
 					<artifact name="scalajs-test-interface_2.12" type="jar" ext="jar" status="no" details="" size="396363" time="0" location="/users/dflood/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/jars/scalajs-test-interface_2.12-0.6.23.jar">
+<<<<<<< HEAD
+=======
+=======
+					<artifact name="scalajs-test-interface_2.12" type="jar" ext="jar" status="no" details="" size="396363" time="0" location="/users/qbutterf/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/jars/scalajs-test-interface_2.12-0.6.23.jar">
+<<<<<<< HEAD
+=======
+=======
+				<metadata-artifact status="no" details="" size="3032" time="0" location="/Users/ninaodegard/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/ivy-0.6.23.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-js/scalajs-test-interface_2.12/0.6.23/scalajs-test-interface_2.12-0.6.23.pom"/>
+				<caller organisation="edu.trinity" name="sandwich-s19-shared_sjs0.6_2.12" conf="test, compile, provided, test-internal, runtime, optional" rev="0.6.23" rev-constraint-default="0.6.23" rev-constraint-dynamic="0.6.23" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scalajs-test-interface_2.12" type="jar" ext="jar" status="no" details="" size="396363" time="0" location="/Users/ninaodegard/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/jars/scalajs-test-interface_2.12-0.6.23.jar">
+>>>>>>> 0a6dbb355fe4174905c4c353bd38c6164f9850c1
+>>>>>>> 68e87794f8d781aa6cc876ee263b0ba60a27411d
+>>>>>>> caba776e0880995bccda9348e3958a2f04b69603
+>>>>>>> 02a010e8272dcb6b7a5037277e8efd65fa6e601d
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-js/scalajs-test-interface_2.12/0.6.23/scalajs-test-interface_2.12-0.6.23.jar"/>
 					</artifact>
 				</artifacts>
@@ -24,11 +59,26 @@
 		<module organisation="org.scala-js" name="scalajs-library_2.12">
 			<revision name="0.6.23" status="release" pubdate="20180515181208" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scala-js.org/" extra-info.apiURL="http://www.scala-js.org/api/scalajs-library/0.6.23/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="1">
 				<license name="BSD New" url="https://github.com/scala-js/scala-js/blob/master/LICENSE"/>
+<<<<<<< HEAD
+				<metadata-artifact status="no" details="" size="2996" time="0" location="/users/qbutterf/.ivy2/cache/org.scala-js/scalajs-library_2.12/ivy-0.6.23.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-js/scalajs-library_2.12/0.6.23/scalajs-library_2.12-0.6.23.pom"/>
+				<caller organisation="org.scala-js" name="scalajs-test-interface_2.12" conf="default, compile, runtime, master" rev="0.6.23" rev-constraint-default="0.6.23" rev-constraint-dynamic="0.6.23" callerrev="0.6.23"/>
+				<caller organisation="edu.trinity" name="sandwich-s19-shared_sjs0.6_2.12" conf="test, compile, provided, test-internal, runtime, optional" rev="0.6.23" rev-constraint-default="0.6.23" rev-constraint-dynamic="0.6.23" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scalajs-library_2.12" type="jar" ext="jar" status="no" details="" size="6500880" time="0" location="/users/qbutterf/.ivy2/cache/org.scala-js/scalajs-library_2.12/jars/scalajs-library_2.12-0.6.23.jar">
+=======
 				<metadata-artifact status="no" details="" size="2996" time="0" location="/users/dflood/.ivy2/cache/org.scala-js/scalajs-library_2.12/ivy-0.6.23.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-js/scalajs-library_2.12/0.6.23/scalajs-library_2.12-0.6.23.pom"/>
 				<caller organisation="org.scala-js" name="scalajs-test-interface_2.12" conf="default, compile, runtime, master" rev="0.6.23" rev-constraint-default="0.6.23" rev-constraint-dynamic="0.6.23" callerrev="0.6.23"/>
 				<caller organisation="edu.trinity" name="sandwich-s19-shared_sjs0.6_2.12" conf="test, compile, provided, test-internal, runtime, optional" rev="0.6.23" rev-constraint-default="0.6.23" rev-constraint-dynamic="0.6.23" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
 					<artifact name="scalajs-library_2.12" type="jar" ext="jar" status="no" details="" size="6500880" time="0" location="/users/dflood/.ivy2/cache/org.scala-js/scalajs-library_2.12/jars/scalajs-library_2.12-0.6.23.jar">
+<<<<<<< HEAD
+=======
+=======
+					<artifact name="scalajs-library_2.12" type="jar" ext="jar" status="no" details="" size="6500880" time="0" location="/Users/ninaodegard/.ivy2/cache/org.scala-js/scalajs-library_2.12/jars/scalajs-library_2.12-0.6.23.jar">
+>>>>>>> 0a6dbb355fe4174905c4c353bd38c6164f9850c1
+>>>>>>> 68e87794f8d781aa6cc876ee263b0ba60a27411d
+>>>>>>> caba776e0880995bccda9348e3958a2f04b69603
+>>>>>>> 02a010e8272dcb6b7a5037277e8efd65fa6e601d
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-js/scalajs-library_2.12/0.6.23/scalajs-library_2.12-0.6.23.jar"/>
 					</artifact>
 				</artifacts>
@@ -37,12 +87,44 @@
 		<module organisation="org.scala-lang" name="scala-library">
 			<revision name="2.12.5" status="release" pubdate="20180316084746" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.5/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="0">
 				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+<<<<<<< HEAD
 				<metadata-artifact status="no" details="" size="2653" time="0" location="/users/dflood/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.5/scala-library-2.12.5.pom"/>
+=======
+<<<<<<< HEAD
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/users/qbutterf/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.5/scala-library-2.12.5.pom"/>
+=======
+<<<<<<< HEAD
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/users/dflood/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.5/scala-library-2.12.5.pom"/>
+=======
+<<<<<<< HEAD
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/users/qbutterf/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.5/scala-library-2.12.5.pom"/>
+=======
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/Users/ninaodegard/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.5/scala-library-2.12.5.pom"/>
+>>>>>>> 0a6dbb355fe4174905c4c353bd38c6164f9850c1
+>>>>>>> 68e87794f8d781aa6cc876ee263b0ba60a27411d
+>>>>>>> caba776e0880995bccda9348e3958a2f04b69603
+>>>>>>> 02a010e8272dcb6b7a5037277e8efd65fa6e601d
 				<caller organisation="org.scala-js" name="scalajs-library_2.12" conf="default, compile, runtime, master" rev="2.12.5" rev-constraint-default="2.12.5" rev-constraint-dynamic="2.12.5" callerrev="0.6.23"/>
 				<caller organisation="org.scala-js" name="scalajs-test-interface_2.12" conf="default, compile, runtime, master" rev="2.12.5" rev-constraint-default="2.12.5" rev-constraint-dynamic="2.12.5" callerrev="0.6.23"/>
 				<caller organisation="edu.trinity" name="sandwich-s19-shared_sjs0.6_2.12" conf="test, compile, provided, test-internal, runtime, optional" rev="2.12.5" rev-constraint-default="2.12.5" rev-constraint-dynamic="2.12.5" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
+<<<<<<< HEAD
 					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5263467" time="0" location="/users/dflood/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.5.jar">
+=======
+<<<<<<< HEAD
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5263467" time="0" location="/users/qbutterf/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.5.jar">
+=======
+<<<<<<< HEAD
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5263467" time="0" location="/users/dflood/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.5.jar">
+=======
+<<<<<<< HEAD
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5263467" time="0" location="/users/qbutterf/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.5.jar">
+=======
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5263467" time="0" location="/Users/ninaodegard/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.5.jar">
+>>>>>>> 0a6dbb355fe4174905c4c353bd38c6164f9850c1
+>>>>>>> 68e87794f8d781aa6cc876ee263b0ba60a27411d
+>>>>>>> caba776e0880995bccda9348e3958a2f04b69603
+>>>>>>> 02a010e8272dcb6b7a5037277e8efd65fa6e601d
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.5/scala-library-2.12.5.jar"/>
 					</artifact>
 				</artifacts>
