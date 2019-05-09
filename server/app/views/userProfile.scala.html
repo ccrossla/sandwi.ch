@@ -1,8 +1,53 @@
 @* userProfile Template File *@
-@(message: String)
+@(sandwiches:Seq[Sandwich])
 
 @main("User Profile") {
-	<div>
-		
+	<div class="sandwichList">
+		<div>
+        	<h2>Sandwich Creations</h2>
+        </div>
+        <div>
+        	<table class="table-buttons">
+            	<tr>
+                    <th class="table-buttons">Sort by:
+                    	<select id="sort-by">
+                        	<option value="SandwichName">Sandwich Name A-Z</option>
+                            <option value="UserName">User Name A-Z</option>
+                            <option value="NumLikes"># Likes</option>
+                        </select>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <table>
+        	<thead>
+            	<tr id="table-header">
+                	<b>
+                    	<th><h3>Sandwich</h3></th>
+                    	<th><h3>Username</h3></th>
+                        <th><h3>Ingredients</h3></th>
+                        <th><h3>Likes</h3></th>
+                        <th><h3>Like!</h3></th>
+                    </b>
+                </tr>
+            </thead>
+            <tbody id="table-data">
+			@for(s <- sandwiches) {
+  				<tr>
+  					<td class="sandwich">@s.name</td>
+  					<td class="username">@s.username</td>
+  					<td class="ingredients">@s.ingredients.mkString(",")</td>
+  					<td class="likes">@s.likes</td>
+  					<td class="likeMe">
+  						<form action="/delete8" method="POST">
+  							<input type="hidden" name="uid" value="name">
+							<input type="submit" name="delete" value="Delete">
+							<button type="submit" name="like" value="Like" class="btn btn-success">Like!</button>
+						</form>
+  					</td>
+  				</tr>
+			}
+            </tbody>
+    	</table>
 	</div>
 }

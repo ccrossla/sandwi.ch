@@ -283,25 +283,25 @@
 [0m[[0m[0mdebug[0m] [0m[0m	resolved ivy file produced in cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m:: downloading artifacts ::[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(src)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-library;2.12.5!scala-library.jar(doc)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] jline#jline;2.14.5!jline.jar(src)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.5!scala-compiler.jar(doc)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.5!scala-reflect.jar(doc)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.5!scala-compiler.jar(src)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-library;2.12.5!scala-library.jar(src)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] jline#jline;2.14.5!jline.jar(doc)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-library;2.12.5!scala-library.jar(doc)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.5!scala-compiler.jar(doc)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(doc)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.5!scala-reflect.jar(src)[0m
-[0m[[0m[0mdebug[0m] [0m[0m:: resolution report :: resolve 59ms :: artifacts dl 4ms[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for edu.trinity#sandwich-s19-shared$sources_javadoc;0.1.0-SNAPSHOT compile produced in /users/gvirgen/webApps/sandwi.ch/shared/.jvm/target/scala-2.12/resolution-cache/reports/edu.trinity-sandwich-s19-shared$sources_javadoc-compile.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for edu.trinity#sandwich-s19-shared$sources_javadoc;0.1.0-SNAPSHOT runtime produced in /users/gvirgen/webApps/sandwi.ch/shared/.jvm/target/scala-2.12/resolution-cache/reports/edu.trinity-sandwich-s19-shared$sources_javadoc-runtime.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for edu.trinity#sandwich-s19-shared$sources_javadoc;0.1.0-SNAPSHOT test produced in /users/gvirgen/webApps/sandwi.ch/shared/.jvm/target/scala-2.12/resolution-cache/reports/edu.trinity-sandwich-s19-shared$sources_javadoc-test.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for edu.trinity#sandwich-s19-shared$sources_javadoc;0.1.0-SNAPSHOT provided produced in /users/gvirgen/webApps/sandwi.ch/shared/.jvm/target/scala-2.12/resolution-cache/reports/edu.trinity-sandwich-s19-shared$sources_javadoc-provided.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for edu.trinity#sandwich-s19-shared$sources_javadoc;0.1.0-SNAPSHOT optional produced in /users/gvirgen/webApps/sandwi.ch/shared/.jvm/target/scala-2.12/resolution-cache/reports/edu.trinity-sandwich-s19-shared$sources_javadoc-optional.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for edu.trinity#sandwich-s19-shared$sources_javadoc;0.1.0-SNAPSHOT compile-internal produced in /users/gvirgen/webApps/sandwi.ch/shared/.jvm/target/scala-2.12/resolution-cache/reports/edu.trinity-sandwich-s19-shared$sources_javadoc-compile-internal.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for edu.trinity#sandwich-s19-shared$sources_javadoc;0.1.0-SNAPSHOT runtime-internal produced in /users/gvirgen/webApps/sandwi.ch/shared/.jvm/target/scala-2.12/resolution-cache/reports/edu.trinity-sandwich-s19-shared$sources_javadoc-runtime-internal.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for edu.trinity#sandwich-s19-shared$sources_javadoc;0.1.0-SNAPSHOT test-internal produced in /users/gvirgen/webApps/sandwi.ch/shared/.jvm/target/scala-2.12/resolution-cache/reports/edu.trinity-sandwich-s19-shared$sources_javadoc-test-internal.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for edu.trinity#sandwich-s19-shared$sources_javadoc;0.1.0-SNAPSHOT plugin produced in /users/gvirgen/webApps/sandwi.ch/shared/.jvm/target/scala-2.12/resolution-cache/reports/edu.trinity-sandwich-s19-shared$sources_javadoc-plugin.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for edu.trinity#sandwich-s19-shared$sources_javadoc;0.1.0-SNAPSHOT pom produced in /users/gvirgen/webApps/sandwi.ch/shared/.jvm/target/scala-2.12/resolution-cache/reports/edu.trinity-sandwich-s19-shared$sources_javadoc-pom.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for edu.trinity#sandwich-s19-shared$sources_javadoc;0.1.0-SNAPSHOT scala-tool produced in /users/gvirgen/webApps/sandwi.ch/shared/.jvm/target/scala-2.12/resolution-cache/reports/edu.trinity-sandwich-s19-shared$sources_javadoc-scala-tool.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	resolve done (59ms resolve - 4ms download)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-library;2.12.5!scala-library.jar(src)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] jline#jline;2.14.5!jline.jar(doc)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.5!scala-compiler.jar(src)[0m
+[0m[[0m[0mdebug[0m] [0m[0m:: resolution report :: resolve 48ms :: artifacts dl 2ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for edu.trinity#sandwich-s19-shared$sources_javadoc;0.1.0-SNAPSHOT compile produced in /users/dflood/LeWebApps/sandwi.ch/shared/.jvm/target/scala-2.12/resolution-cache/reports/edu.trinity-sandwich-s19-shared$sources_javadoc-compile.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for edu.trinity#sandwich-s19-shared$sources_javadoc;0.1.0-SNAPSHOT runtime produced in /users/dflood/LeWebApps/sandwi.ch/shared/.jvm/target/scala-2.12/resolution-cache/reports/edu.trinity-sandwich-s19-shared$sources_javadoc-runtime.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for edu.trinity#sandwich-s19-shared$sources_javadoc;0.1.0-SNAPSHOT test produced in /users/dflood/LeWebApps/sandwi.ch/shared/.jvm/target/scala-2.12/resolution-cache/reports/edu.trinity-sandwich-s19-shared$sources_javadoc-test.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for edu.trinity#sandwich-s19-shared$sources_javadoc;0.1.0-SNAPSHOT provided produced in /users/dflood/LeWebApps/sandwi.ch/shared/.jvm/target/scala-2.12/resolution-cache/reports/edu.trinity-sandwich-s19-shared$sources_javadoc-provided.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for edu.trinity#sandwich-s19-shared$sources_javadoc;0.1.0-SNAPSHOT optional produced in /users/dflood/LeWebApps/sandwi.ch/shared/.jvm/target/scala-2.12/resolution-cache/reports/edu.trinity-sandwich-s19-shared$sources_javadoc-optional.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for edu.trinity#sandwich-s19-shared$sources_javadoc;0.1.0-SNAPSHOT compile-internal produced in /users/dflood/LeWebApps/sandwi.ch/shared/.jvm/target/scala-2.12/resolution-cache/reports/edu.trinity-sandwich-s19-shared$sources_javadoc-compile-internal.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for edu.trinity#sandwich-s19-shared$sources_javadoc;0.1.0-SNAPSHOT runtime-internal produced in /users/dflood/LeWebApps/sandwi.ch/shared/.jvm/target/scala-2.12/resolution-cache/reports/edu.trinity-sandwich-s19-shared$sources_javadoc-runtime-internal.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for edu.trinity#sandwich-s19-shared$sources_javadoc;0.1.0-SNAPSHOT test-internal produced in /users/dflood/LeWebApps/sandwi.ch/shared/.jvm/target/scala-2.12/resolution-cache/reports/edu.trinity-sandwich-s19-shared$sources_javadoc-test-internal.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for edu.trinity#sandwich-s19-shared$sources_javadoc;0.1.0-SNAPSHOT plugin produced in /users/dflood/LeWebApps/sandwi.ch/shared/.jvm/target/scala-2.12/resolution-cache/reports/edu.trinity-sandwich-s19-shared$sources_javadoc-plugin.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for edu.trinity#sandwich-s19-shared$sources_javadoc;0.1.0-SNAPSHOT pom produced in /users/dflood/LeWebApps/sandwi.ch/shared/.jvm/target/scala-2.12/resolution-cache/reports/edu.trinity-sandwich-s19-shared$sources_javadoc-pom.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for edu.trinity#sandwich-s19-shared$sources_javadoc;0.1.0-SNAPSHOT scala-tool produced in /users/dflood/LeWebApps/sandwi.ch/shared/.jvm/target/scala-2.12/resolution-cache/reports/edu.trinity-sandwich-s19-shared$sources_javadoc-scala-tool.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resolve done (48ms resolve - 2ms download)[0m
