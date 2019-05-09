@@ -1,23 +1,9 @@
 @* userProfile Template File *@
-@(sandwiches:Seq[Sandwich])
-
+@(uid:String, sandwiches:Seq[(String, Seq[Int], String, Int, Int)])
 @main("User Profile") {
 	<div class="sandwichList">
 		<div>
         	<h2>Sandwich Creations</h2>
-        </div>
-        <div>
-        	<table class="table-buttons">
-            	<tr>
-                    <th class="table-buttons">Sort by:
-                    	<select id="sort-by">
-                        	<option value="SandwichName">Sandwich Name A-Z</option>
-                            <option value="UserName">User Name A-Z</option>
-                            <option value="NumLikes"># Likes</option>
-                        </select>
-                    </th>
-                </tr>
-            </table>
         </div>
         <table>
         	<thead>
@@ -34,14 +20,14 @@
             <tbody id="table-data">
 			@for(s <- sandwiches) {
   				<tr>
-  					<td class="sandwich">@s.name</td>
-  					<td class="username">@s.username</td>
-  					<td class="ingredients">@s.ingredients.mkString(",")</td>
-  					<td class="likes">@s.likes</td>
+  					<td class="sandwich">@s._1</td>
+  					<td class="username">@s._3</td>
+  					<td class="ingredients">@s._2.map(f => models.Featured.parseI(f)).mkString(", ")</td>
+  					<td class="likes">@s._4</td>
   					<td class="likeMe">
-  						<form action="/delete8" method="POST">
-  							<input type="hidden" name="uid" value="name">
-							<input type="submit" name="delete" value="Delete">
+  						<form action="/likeSandwich" method="POST">
+  							<input type="hidden" name="uid" value="@uid">
+  							<input type="hidden" name="sid" value="@s._5">
 							<button type="submit" name="like" value="Like" class="btn btn-success">Like!</button>
 						</form>
   					</td>
