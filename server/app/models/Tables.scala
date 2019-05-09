@@ -20,23 +20,23 @@ trait Tables {
 
   /** Entity class storing rows of table Ingredients
    *  @param id Database column id SqlType(INT), AutoInc, PrimaryKey
-   *  @param name Database column name SqlType(VARCHAR), Length(15,true), Default(None) */
-  case class IngredientsRow(id: Int, name: Option[String] = None)
+   *  @param name Database column name SqlType(VARCHAR), Length(15,true) */
+  case class IngredientsRow(id: Int, name: String)
   /** GetResult implicit for fetching IngredientsRow objects using plain SQL queries */
-  implicit def GetResultIngredientsRow(implicit e0: GR[Int], e1: GR[Option[String]]): GR[IngredientsRow] = GR{
+  implicit def GetResultIngredientsRow(implicit e0: GR[Int], e1: GR[String]): GR[IngredientsRow] = GR{
     prs => import prs._
-    IngredientsRow.tupled((<<[Int], <<?[String]))
+    IngredientsRow.tupled((<<[Int], <<[String]))
   }
   /** Table description of table ingredients. Objects of this class serve as prototypes for rows in queries. */
   class Ingredients(_tableTag: Tag) extends profile.api.Table[IngredientsRow](_tableTag, Some("sandwich"), "ingredients") {
     def * = (id, name) <> (IngredientsRow.tupled, IngredientsRow.unapply)
     /** Maps whole row to an option. Useful for outer joins. */
-    def ? = ((Rep.Some(id), name)).shaped.<>({r=>import r._; _1.map(_=> IngredientsRow.tupled((_1.get, _2)))}, (_:Any) =>  throw new Exception("Inserting into ? projection not supported."))
+    def ? = ((Rep.Some(id), Rep.Some(name))).shaped.<>({r=>import r._; _1.map(_=> IngredientsRow.tupled((_1.get, _2.get)))}, (_:Any) =>  throw new Exception("Inserting into ? projection not supported."))
 
     /** Database column id SqlType(INT), AutoInc, PrimaryKey */
     val id: Rep[Int] = column[Int]("id", O.AutoInc, O.PrimaryKey)
-    /** Database column name SqlType(VARCHAR), Length(15,true), Default(None) */
-    val name: Rep[Option[String]] = column[Option[String]]("name", O.Length(15,varying=true), O.Default(None))
+    /** Database column name SqlType(VARCHAR), Length(15,true) */
+    val name: Rep[String] = column[String]("name", O.Length(15,varying=true))
   }
   /** Collection-like TableQuery object for table Ingredients */
   lazy val Ingredients = new TableQuery(tag => new Ingredients(tag))
@@ -75,25 +75,25 @@ trait Tables {
   /** Entity class storing rows of table Sandwiches
    *  @param id Database column id SqlType(INT), AutoInc, PrimaryKey
    *  @param uid Database column uid SqlType(INT)
-   *  @param name Database column name SqlType(VARCHAR), Length(15,true), Default(None) */
-  case class SandwichesRow(id: Int, uid: Int, name: Option[String] = None)
+   *  @param name Database column name SqlType(VARCHAR), Length(15,true) */
+  case class SandwichesRow(id: Int, uid: Int, name: String)
   /** GetResult implicit for fetching SandwichesRow objects using plain SQL queries */
-  implicit def GetResultSandwichesRow(implicit e0: GR[Int], e1: GR[Option[String]]): GR[SandwichesRow] = GR{
+  implicit def GetResultSandwichesRow(implicit e0: GR[Int], e1: GR[String]): GR[SandwichesRow] = GR{
     prs => import prs._
-    SandwichesRow.tupled((<<[Int], <<[Int], <<?[String]))
+    SandwichesRow.tupled((<<[Int], <<[Int], <<[String]))
   }
   /** Table description of table sandwiches. Objects of this class serve as prototypes for rows in queries. */
   class Sandwiches(_tableTag: Tag) extends profile.api.Table[SandwichesRow](_tableTag, Some("sandwich"), "sandwiches") {
     def * = (id, uid, name) <> (SandwichesRow.tupled, SandwichesRow.unapply)
     /** Maps whole row to an option. Useful for outer joins. */
-    def ? = ((Rep.Some(id), Rep.Some(uid), name)).shaped.<>({r=>import r._; _1.map(_=> SandwichesRow.tupled((_1.get, _2.get, _3)))}, (_:Any) =>  throw new Exception("Inserting into ? projection not supported."))
+    def ? = ((Rep.Some(id), Rep.Some(uid), Rep.Some(name))).shaped.<>({r=>import r._; _1.map(_=> SandwichesRow.tupled((_1.get, _2.get, _3.get)))}, (_:Any) =>  throw new Exception("Inserting into ? projection not supported."))
 
     /** Database column id SqlType(INT), AutoInc, PrimaryKey */
     val id: Rep[Int] = column[Int]("id", O.AutoInc, O.PrimaryKey)
     /** Database column uid SqlType(INT) */
     val uid: Rep[Int] = column[Int]("uid")
-    /** Database column name SqlType(VARCHAR), Length(15,true), Default(None) */
-    val name: Rep[Option[String]] = column[Option[String]]("name", O.Length(15,varying=true), O.Default(None))
+    /** Database column name SqlType(VARCHAR), Length(15,true) */
+    val name: Rep[String] = column[String]("name", O.Length(15,varying=true))
 
     /** Foreign key referencing User (database name sandwiches_ibfk_1) */
     lazy val userFk = foreignKey("sandwiches_ibfk_1", uid, User)(r => r.id, onUpdate=ForeignKeyAction.NoAction, onDelete=ForeignKeyAction.Cascade)
