@@ -8,25 +8,30 @@ GET    /                        controllers.HomePageApp.index
 #Sandwich home
 
 # Builder page
-GET    /addIngredient  			controllers.SandwichMaker.addIngredient
++ nocsrf
+POST   /addIngredient           controllers.SandwichMaker.addIngredient
++ nocsrf
+POST   /changeName              controllers.SandwichMaker.changeName
 
-GET		/builder				controllers.SandwichMaker.build
-GET		/rebuild				controllers.SandwichMaker.rebuild
+GET    /builder                 controllers.SandwichMaker.build
+GET    /rebuild                 controllers.SandwichMaker.rebuild
 #GET     /addSandwich  			controllers.SandwichMaker.createSandwich(sid: Int)
-
++ nocsrf
 POST   /userLogin               controllers.Application.userLogin
++ nocsrf
 POST   /createAUser             controllers.Application.createAUser
 
 GET    /userWelcome             controllers.Application.userWelcome
 GET    /userLogout              controllers.Application.userLogout
 
 #All Sandwiches page
-GET		/allSandwiches			 controllers.SandwichList.allSandwiches
-POST    /likeSandwich			 controllers.SandwichList.likeSandwich
+GET    /allSandwiches           controllers.SandwichList.allSandwiches
++ nocsrf
+POST   /likeSandwich            controllers.SandwichList.likeSandwich
 
 #Chat
-GET		/chat					controllers.WSChatController.index
-GET		/chatSocket				controllers.WSChatController.socket
+GET    /chat                    controllers.WSChatController.index
+GET    /chatSocket              controllers.WSChatController.socket
 
 
 # Prefix must match `play.assets.urlPrefix`

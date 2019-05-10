@@ -4,23 +4,43 @@
 	<h1>Sandwich Builder</h1>
 	<h2></h2>
 	
-	<form action="changeName" method="get">
+	<form action="/changeName" method="POST">
 	<input type="hidden" name="sid" value=@sid></input>
 	<input type="text" name="sname" value="@sname"></input>
+	<button type="submit" name="namechange" value="Submit Sandwich" class="btn btn-success">Update Name</button>
 	</form>
 	
 	<table class="IngredientBuilder">
 		<thead> </thead>
-		<tbody id="table-header">
+		<tbody id="table-data">
 		@for(x<-ingredients){
 			<tr>
 				<td> @models.Featured.parseI(x) </td>
 				<td> 
-					<form action="addIngredient" method="get">
+					<form action="/addIngredient" method="POST">
 						<input type="hidden" name="iid" value=@x></input>
 						<input type="hidden" name="sid" value=@sid></input>
 						<input type="hidden" name="sname" value=@sname></input>
-						<input type="submit" value="Add ingredient"></input>
+						<button type="submit" name="addingredient" value="Add ingredient" class="btn btn-success">Add Ingredient</button>
+					</form>
+				</td>
+			</tr>
+		}
+		</tbody>	
+	</table>
+	
+	<table class="IngredientBuilder">
+		<thead> </thead>
+		<tbody id="table-data">
+		@for(x<-ingredients){
+			<tr>
+				<td> @models.Featured.parseI(x) </td>
+				<td> 
+					<form action="/addIngredient" method="POST">
+						<input type="hidden" name="iid" value=@x></input>
+						<input type="hidden" name="sid" value=@sid></input>
+						<input type="hidden" name="sname" value=@sname></input>
+						<button type="submit" name="addingredient" value="Add ingredient" class="btn btn-success">Add Ingredient</button>
 					</form>
 				</td>
 			</tr>
