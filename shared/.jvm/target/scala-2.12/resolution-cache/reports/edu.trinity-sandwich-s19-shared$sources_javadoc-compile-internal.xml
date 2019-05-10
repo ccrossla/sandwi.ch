@@ -7,18 +7,18 @@
 		revision="0.1.0-SNAPSHOT"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20190509132039"/>
+		date="20190509133920"/>
 	<dependencies>
 		<module organisation="org.scala-lang" name="scala-library">
 			<revision name="2.12.5" status="release" pubdate="20180316084746" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.5/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
 				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
-				<metadata-artifact status="no" details="" size="2653" time="0" location="/Users/ninaodegard/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.5/scala-library-2.12.5.pom"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/users/qbutterf/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.5/scala-library-2.12.5.pom"/>
 				<caller organisation="edu.trinity" name="sandwich-s19-shared$sources_javadoc" conf="compile-internal, compile, provided, optional" rev="2.12.5" rev-constraint-default="2.12.5" rev-constraint-dynamic="2.12.5" callerrev="0.1.0-SNAPSHOT" extra-info.apiURL="http://www.scala-lang.org/api/2.12.5/"/>
 				<artifacts>
-					<artifact name="scala-library" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="30565143" time="0" location="/Users/ninaodegard/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.12.5-javadoc.jar">
+					<artifact name="scala-library" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="30565143" time="0" location="/users/qbutterf/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.12.5-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.5/scala-library-2.12.5-javadoc.jar"/>
 					</artifact>
-					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="992200" time="0" location="/Users/ninaodegard/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.5-sources.jar">
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="992200" time="0" location="/users/qbutterf/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.5/scala-library-2.12.5-sources.jar"/>
 					</artifact>
 				</artifacts>

@@ -1,19 +1,32 @@
 @* builder Template File *@
-@(uid:String, name:String, ingredients: Seq[String])
+@(uid:Int, ingredients: Seq[Int], sid: Int, sname:String)
 @main("sandwich builder"){
-	
 	<h1>Sandwich Builder</h1>
-	<table>
-	@ingredients.map { i =>
-		<tr>
-			<td>
-				<button onclick="addingredient"> </button>
-			<td>@i</td>
-			
+	<h2></h2>
 	
-	}
+	<form action="changeName" method="get">
+	<input type="hidden" name="sid" value=@sid></input>
+	<input type="text" name="sname" value="@sname"></input>
+	</form>
+	
+	<table class="IngredientBuilder">
+		<thead> </thead>
+		<tbody id="table-header">
+		@for(x<-ingredients){
+			<tr>
+				<td> @models.Featured.parseI(x) </td>
+				<td> 
+					<form action="addIngredient" method="get">
+						<input type="hidden" name="iid" value=@x></input>
+						<input type="hidden" name="sid" value=@sid></input>
+						<input type="hidden" name="sname" value=@sname></input>
+						<input type="submit" value="Add ingredient"></input>
+					</form>
+				</td>
+			</tr>
+		}
+		</tbody>	
 	</table>
-	
 	
 	
 		
