@@ -9,9 +9,18 @@
 	<input type="text" name="sname" value="@sname"></input>
 	<button type="submit" name="namechange" value="Submit Sandwich" class="btn btn-success">Update Name</button>
 	</form>
-	
+	<div class="container">
+	<div class="row">
+	<div class="col">
 	<table class="IngredientBuilder">
-		<thead> </thead>
+		<thead>
+            	<tr id="table-header">
+                	<b>
+                    	<th colspan="2"><h3>Ingredients</h3></th>
+             
+                    </b>
+                </tr>
+            </thead>
 		<tbody id="table-data">
 		@for(x<-ingredients){
 			<tr>
@@ -28,9 +37,19 @@
 		}
 		</tbody>	
 	</table>
+	</div>
+	
+	<div class="col">
 	
 	<table class="Current">
-		<thead> </thead>
+		<thead>
+            	<tr id="table-header">
+                	<b>
+                    	<th><h3>Current Ingredients</h3></th>
+                    
+                    </b>
+                </tr>
+            </thead>
 		<tbody id="table-data">
 		@for(x<-currentS){
 			<tr>
@@ -39,7 +58,8 @@
 		}
 		</tbody>	
 	</table>
+	</div>
 	
-	
-		
+	</div>
+		</div>
 }

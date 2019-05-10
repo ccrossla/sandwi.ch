@@ -75,8 +75,8 @@ class Application @Inject() (protected val dbConfigProvider: DatabaseConfigProvi
       userData => {
         val userInfoFut = models.LoginQueries.addUser(db, userData.username, userData.password)
         userInfoFut.map(userInfo => userInfo match {
-          case false => BadRequest(views.html.userHomePage(userLog, createUser))
-          case true => Redirect(routes.HomePageApp.index).withSession("username" -> userData.username, "uid" -> userInfo.toString)
+          case None => BadRequest(views.html.userHomePage(userLog, createUser))
+          case Some(uid) => Redirect(routes.HomePageApp.index).withSession("username" -> userData.username, "uid" -> uid.toString)
         })
       })
   }

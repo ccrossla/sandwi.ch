@@ -8,15 +8,10 @@ import Tables._
 import scala.concurrent.ExecutionContext
 
 object BuilderQueries {
-  def addSandwich(db: Database, uid: Int)(implicit ec: ExecutionContext): Future[Int] = {//
-    /*val x = db.run {
-       (for (u <- User 
-        if u.id === uid 
-        ) yield u.username).result
-    }
-    x.map(f=> {*/
+  def addSandwich(db: Database, uid: Int, uName: String)(implicit ec: ExecutionContext): Future[Int] = {
+    println(uName)
     db.run {
-      Sandwiches += SandwichesRow(0, uid, (uid + "'s sandwich"))//uname
+      Sandwiches += SandwichesRow(0, uid, (uName + " sandwich"))
     }
   }
   def getSid(db: Database, uid: Int)(implicit ec: ExecutionContext): Future[Seq[(Int, String)]] = {

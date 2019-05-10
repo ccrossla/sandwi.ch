@@ -35,15 +35,15 @@ object LoginQueries {
     uIDFut.map(i => i.headOption)
   }
 
-  def addUser(db: Database, username: String, password: String)(implicit ec: ExecutionContext): Future[Boolean] = {
+  def addUser(db: Database, username: String, password: String)(implicit ec: ExecutionContext): Future[Option[Int]] = {
     val userExistsFut = existsUser(db, username, password)
     userExistsFut.flatMap { userExists =>
       if (userExists == None) {
         (db.run {
-          User += UserRow(0, username, password)
-        }).map(_ > 0)
+          (User returning User.map(_.id)) += UserRow(0, username, password)
+        }).map(i => Some(i))
       } else {
-        Future.successful(false)
+        Future.successful(None)
       }
     }
   }

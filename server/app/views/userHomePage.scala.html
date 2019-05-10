@@ -46,8 +46,8 @@
 	
 	@helper.form(action = controllers.routes.Application.createAUser()) {
 		@helper.CSRF.formField
-		@helper.inputText(createUserForm("username-l"))
-		@helper.inputPassword(createUserForm("password-l"))
+		@helper.inputText(createUserForm("username"))
+		@helper.inputPassword(createUserForm("password"))
 		<div class="form-actions">
 			<button type="submit">Create User</button>
 		</div>

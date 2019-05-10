@@ -27,13 +27,18 @@ class SandwichMaker @Inject() (protected val dbConfigProvider: DatabaseConfigPro
 
   def build = Action.async { implicit request =>
     val u = request.session("uid").toInt
+    val name = request.session("username")
     val sand = Seq()
-    models.BuilderQueries.addSandwich(db, u) //future
+    
+    models.BuilderQueries.addSandwich(db, u, name).flatMap(j => 
 
-    models.BuilderQueries.getAllIngredients(db).flatMap(f => { //then future this is bad
-      models.BuilderQueries.getSid(db, u).map(x =>
-        Ok(views.html.builder(u, f, x.last._1, x.last._2, sand)))
+    models.BuilderQueries.getAllIngredients(db).flatMap(f => {
+      models.BuilderQueries.getSid(db, u).flatMap(x =>
+        BuilderQueries.getSandwich(db, x.last._1).map { i =>
+          Ok(views.html.builder(u, f, x.last._1, x.last._2, i))
+        })
     })
+    )
 
   }
   def changeName = Action.async { implicit request =>
@@ -71,9 +76,9 @@ class SandwichMaker @Inject() (protected val dbConfigProvider: DatabaseConfigPro
       val sid = args("sid").head.toInt
       val iid = args("iid").head.toInt
       val sname = args("sname").head
-      val ingredients = BuilderQueries.getSandwich(db, sid)
       val success = BuilderQueries.addIngredient(db, sid, iid)
       success.flatMap { q =>
+        val ingredients = BuilderQueries.getSandwich(db, sid)
         if (q > 0) {
           val allgreeds = models.BuilderQueries.getAllIngredients(db)
           ingredients.flatMap { i =>
