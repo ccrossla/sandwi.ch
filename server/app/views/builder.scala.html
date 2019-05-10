@@ -1,5 +1,5 @@
 @* builder Template File *@
-@(uid:Int, ingredients: Seq[Int], sid: Int, sname:String)
+@(uid:Int, ingredients: Seq[Int], sid: Int, sname:String, currentS: Seq[Int])
 @main("sandwich builder"){
 	<h1>Sandwich Builder</h1>
 	<h2></h2>
@@ -29,20 +29,12 @@
 		</tbody>	
 	</table>
 	
-	<table class="IngredientBuilder">
+	<table class="Current">
 		<thead> </thead>
 		<tbody id="table-data">
-		@for(x<-ingredients){
+		@for(x<-currentS){
 			<tr>
 				<td> @models.Featured.parseI(x) </td>
-				<td> 
-					<form action="/addIngredient" method="POST">
-						<input type="hidden" name="iid" value=@x></input>
-						<input type="hidden" name="sid" value=@sid></input>
-						<input type="hidden" name="sname" value=@sname></input>
-						<button type="submit" name="addingredient" value="Add ingredient" class="btn btn-success">Add Ingredient</button>
-					</form>
-				</td>
 			</tr>
 		}
 		</tbody>	

@@ -43,9 +43,15 @@ object BuilderQueries {
     }
   }
   
-  def getSandwich(db: Database)(implicit ec: ExecutionContext): Future[Seq[Int]] = {
+  def getSandwich(db: Database, sid: Int)(implicit ec: ExecutionContext): Future[Seq[Int]] = {
     db.run {
-      (for (i <- Sandwichingredient) yield i.iid).result
+      (for{
+        i <- Sandwichingredient
+        if i.sid === sid
+      } yield{
+        i.iid
+      }).result
+        
     }
   }
   

@@ -27,22 +27,28 @@ class SandwichMaker @Inject() (protected val dbConfigProvider: DatabaseConfigPro
 
   def build = Action.async { implicit request =>
     val u = request.session("uid").toInt
+    val sand = Seq()
     models.BuilderQueries.addSandwich(db, u) //future
 
     models.BuilderQueries.getAllIngredients(db).flatMap(f => { //then future this is bad
       models.BuilderQueries.getSid(db, u).map(x =>
-        Ok(views.html.builder(u, f, x.last._1, x.last._2)))
+        Ok(views.html.builder(u, f, x.last._1, x.last._2, sand)))
     })
 
   }
   def changeName = Action.async { implicit request =>
-  
+
     val postBody = request.body.asFormUrlEncoded
     postBody.map { args =>
       val sid = args("sid").head.toInt
+      val ingredients = BuilderQueries.getSandwich(db, sid)
       val sname = args("sname").head
       BuilderQueries.updateName(db, sid, sname).flatMap(f => {
-        models.BuilderQueries.getAllIngredients(db).map(q => Ok(views.html.builder(request.session("uid").toInt, q, sid, sname)))
+        ingredients.flatMap { i =>
+          models.BuilderQueries.getAllIngredients(db).map {
+            q => Ok(views.html.builder(request.session("uid").toInt, q, sid, sname, i))
+          }
+        }
       })
     }.getOrElse(Future(Redirect("rebuild", 200)))
 
@@ -50,30 +56,33 @@ class SandwichMaker @Inject() (protected val dbConfigProvider: DatabaseConfigPro
 
   def rebuild = Action.async { implicit request =>
     val u = request.session("uid").toInt
+
     models.BuilderQueries.getAllIngredients(db).flatMap(f => {
-      models.BuilderQueries.getSid(db, u).map(x =>
-        Ok(views.html.builder(u, f, x.last._1, x.last._2)))
+      models.BuilderQueries.getSid(db, u).flatMap(x =>
+        BuilderQueries.getSandwich(db, x.last._1).map { i =>
+          Ok(views.html.builder(u, f, x.last._1, x.last._2, i))
+        })
     })
   }
-  
-  
-  
-  
+
   def addIngredient = Action.async { implicit request =>
     val postBody = request.body.asFormUrlEncoded
     postBody.map { args =>
       val sid = args("sid").head.toInt
       val iid = args("iid").head.toInt
       val sname = args("sname").head
+      val ingredients = BuilderQueries.getSandwich(db, sid)
       val success = BuilderQueries.addIngredient(db, sid, iid)
       success.flatMap { q =>
         if (q > 0) {
           val allgreeds = models.BuilderQueries.getAllIngredients(db)
-          allgreeds.map { ingred =>
-            if (ingred != None) {
-              Ok(views.html.builder(request.session("uid").toInt, ingred, sid, sname))
-            } else {
-              Redirect(routes.SandwichMaker.rebuild)
+          ingredients.flatMap { i =>
+            allgreeds.map { ingred =>
+              if (ingred != None) {
+                Ok(views.html.builder(request.session("uid").toInt, ingred, sid, sname, i))
+              } else {
+                Redirect(routes.SandwichMaker.rebuild)
+              }
             }
           }
 
