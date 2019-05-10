@@ -28,28 +28,16 @@ class WSChatController @Inject()(cc: ControllerComponents)(implicit system: Acto
 
   val manager = system.actorOf(Props[ChatManager], "manager")
 
-  
-
   def index = Action { implicit request =>
 
     Ok(views.html.chatPage())
-
   }
-
-  
-
   def socket = WebSocket.accept[String, String] { request =>
-
     ActorFlow.actorRef { out =>
-
       ChatWebSocketActor.props(out, manager)
 
     }
 
   }
-
-  
-
-  
 
 }
