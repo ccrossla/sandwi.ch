@@ -245,7 +245,7 @@ input.onkeydown = (event) => {
 $( ".input-group-append" ).click(function() {
 
 	
-
+		console.log("hi");
   		let myMsg = new Message(input.value, curTime, myPic, loc, myName, 'msg');	
 
 		let msgString = JSON.stringify(myMsg);	

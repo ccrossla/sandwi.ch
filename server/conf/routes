@@ -18,6 +18,10 @@ GET    /userLogout              controllers.Application.userLogout
 GET		/allSandwiches			 controllers.SandwichList.allSandwiches
 POST    /likeSandwich			 controllers.SandwichList.likeSandwich
 
+#Chat
+GET		/chat					controllers.WSChatController.index
+GET		/chatSocket				controllers.WSChatController.socket
+
 
 # Prefix must match `play.assets.urlPrefix`
 GET    /assets/*file            controllers.Assets.at(file)

@@ -1,6 +1,5 @@
 package actors
 
-package actors
 
 
 import akka.actor.Actor

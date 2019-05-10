@@ -1,5 +1,6 @@
 package controllers
 
+import javax.inject._
 
 import play.api.mvc._
 
@@ -29,7 +30,7 @@ class WSChatController @Inject()(cc: ControllerComponents)(implicit system: Acto
 
   
 
-  def chat = Action { implicit request =>
+  def index = Action { implicit request =>
 
     Ok(views.html.chatPage())
 

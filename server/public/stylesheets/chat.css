@@ -8,7 +8,7 @@
 
 			background: #7F7FD5;
 
-	      background: -webkit-linear-gradient(to right, #91EAE4, #91EAE4, #91EAE4);
+	      	background: -webkit-linear-gradient(to right, #91EAE4, #91EAE4, #91EAE4);
 
 	        background: linear-gradient(to right, #91EAE4, #91EAE4, #91EAE4);
 
@@ -323,14 +323,6 @@
 	#trash-btn:hover{
 
 		cursor: pointer;
-
-	}
-
-	@media(max-width: 576px){
-
-	.contacts_card{
-
-		margin-bottom: 15px !important;
 
 	}
 
