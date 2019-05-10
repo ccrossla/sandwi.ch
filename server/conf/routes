@@ -14,14 +14,19 @@ GET		/builder				controllers.SandwichMaker.build
 GET		/rebuild				controllers.SandwichMaker.rebuild
 #GET     /addSandwich  			controllers.SandwichMaker.createSandwich(sid: Int)
 
-#POST   /userLogin               controllers.Application.userLogin
-#POST   /userLogin               controllers.Application.createUser
+POST   /userLogin               controllers.Application.userLogin
+POST   /createAUser             controllers.Application.createAUser
 
-#GET    /userWelcome             controllers.Application.userWelcome
-#GET    /userLogout              controllers.Application.userLogout
+GET    /userWelcome             controllers.Application.userWelcome
+GET    /userLogout              controllers.Application.userLogout
 
 #All Sandwiches page
 GET		/allSandwiches			 controllers.SandwichList.allSandwiches
+POST    /likeSandwich			 controllers.SandwichList.likeSandwich
+
+#Chat
+GET		/chat					controllers.WSChatController.index
+GET		/chatSocket				controllers.WSChatController.socket
 
 
 # Prefix must match `play.assets.urlPrefix`

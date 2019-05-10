@@ -18,7 +18,7 @@ object SandwichListData {
       val ingredientFuture = db.run {
         (for {
           sing <- Sandwichingredient
-          if sing.iid === sRow.head.id
+          if sing.sid === sRow.head.id
           ing <- Ingredients
           if ing.id === sing.iid
         } yield ing.name).result
@@ -38,8 +38,13 @@ object SandwichListData {
       })
     }
   }
-
+  
+  
+  
+  
+//above here
   def likeSandwich(db: Database, sid: Int, uid: Int)(implicit ec: ExecutionContext): Future[Boolean] = {
+    
     val existsf = likeExists(db, sid, uid)
     existsf.flatMap { exists =>
       if (exists == None) {
@@ -47,7 +52,7 @@ object SandwichListData {
           Likes += LikesRow(sid, uid)
         }).map(_ > 0)
       } else {
-        return Future.successful(false)
+         Future.successful(false)
       }
     }
   }

@@ -8,6 +8,12 @@
     <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
     <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
     <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Raleway|Raleway+Dots" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/chat.css")">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </head>
   <body>
@@ -22,11 +28,11 @@
         	</button>
         	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             	<div class="navbar-nav">
-                	<a class="nav-item nav-link" href="#">Home</a>
+                	<a class="nav-item nav-link" href="/">Featured</a>
                 	<a class="nav-item nav-link" href="#">Builder</a>
                 	<a class="nav-item nav-link" href="#">Chat</a>
-                	<a class="nav-item nav-link" href="#">Profile</a>
-                	<a class="nav-item nav-link" href="#">Log Out</a>
+                	<a class="nav-item nav-link" href="/allSandwiches">Sandwiches</a>
+                	<a class="nav-item nav-link" href="/userLogout">Log Out</a>
             	</div>
         	</div>
     	</nav>
@@ -43,7 +49,7 @@
         	</div>
     	</footer>
     </section>
-    @scalajs.html.scripts("client", routes.Assets.versioned(_).toString, name => getClass.getResource(s"/public/$name") != null)
+    @scalajs.html.scripts("client", routes.Assets.versioned(_).toString, name => getClass.getResource(s"/public/$name") != null) 
   	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

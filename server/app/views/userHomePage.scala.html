@@ -3,10 +3,97 @@
 
 @(userLoginForm: Form[controllers.UserLogin], createUserForm: Form[controllers.UserLogin])(implicit request: MessagesRequestHeader, flash:Flash)
 
-@main("Login for Sandwich") {
+<!DOCTYPE html>
 
-<h2 id="login">Login for Sandwich</h2>
+<html>
+  <head>
+    <title>User Login Page</title>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Raleway|Raleway+Dots" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+  <body>
+  	<section class="header">
+  		<nav class="navbar fixed-top navbar-expand-xl navbar-dark nav-colors">
+        	<a class="navbar-brand" href="#">
+        		<img src="@routes.Assets.at("images/logo.png")" width="30" height="30" class="d-inline-block align-top" alt="">
+            	Sandwi.ch
+        	</a>
+        	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            	<span class="navbar-toggler-icon"></span>
+        	</button>
+        	
+    	</nav>
+    </section>
+    <section class="workspace">
+    	
+    	<h2 id="login">Login for Sandwi.ch</h2>
 	<em>Note: If you do not have a log in click Create User and enter a username and password to be added to the system</em>
 	
+	@helper.form(action = controllers.routes.Application.userLogin()) {
+		@helper.CSRF.formField
+		@helper.inputText(userLoginForm("username"))
+		@helper.inputPassword(userLoginForm("password"))
+		<div class="form-actions">
+			<button onclick="storeUser()" type="submit">Login</button>
+		</div>
+	}
 	
+	<br>
+	<em> If you are a new to Sandwi.ch, please use the form below </em>
+	<br>
+	
+	@helper.form(action = controllers.routes.Application.createAUser()) {
+		@helper.CSRF.formField
+		@helper.inputText(createUserForm("username"))
+		@helper.inputPassword(createUserForm("password"))
+		<div class="form-actions">
+			<button type="submit">Create User</button>
+		</div>
+		
+	}	
+    	
+    	
+    </section>
+    <section class="footer">
+    	<footer>
+        	<div>
+            	<span class="navbar-text footer-center">
+                	Sandwi.ch® is a Registered Trademark of Sandwi.ch IP, LLC © 2018-2019 Sandwi.ch IP, LLC. All Rights Reserved.
+            	</span>
+        	</div>
+    	</footer>
+    </section>
+    @scalajs.html.scripts("client", routes.Assets.versioned(_).toString, name => getClass.getResource(s"/public/$name") != null)
+  	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+<script>
+
+	if(localStorage.getItem('uname') === null){
+		//get a unique id
+	function create_UUID(){
+    let dt = new Date().getTime();
+    let uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        let r = (dt + Math.random()*16)%16 | 0;
+        dt = Math.floor(dt/16);
+        return (c=='x' ? r :(r&0x3|0x8)).toString(16);
+    });
+    return uuid;
 }
+
+	const id = create_UUID();
+	const input = document.getElementById("uname");
+	function storeUser() {
+  		localStorage.setItem('uname', input.value);
+		localStorage.setItem(input.value, id);
+	}
+	}
+
+</script>
+  </body>
+</html>
+	
+

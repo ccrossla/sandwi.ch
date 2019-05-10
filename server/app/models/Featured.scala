@@ -15,13 +15,13 @@ case class sandLikes(sandwich: Int, tLikes: Int)
 
 object Featured {
  
-  //not done
-  def getBestSandwichIngredientsWithCreators (db: Database)(implicit ec: ExecutionContext): Future[Seq[(String, Seq[Int], String)]] = {
-    val s = getBestSandwichesU(db, 4)
+  
+  def getBestSandwichIngredientsWithCreators (db: Database, num: Int)(implicit ec: ExecutionContext): Future[Seq[(String, Seq[Int], String, Int, Int)]] = {
+    val s = getBestSandwichesU(db, num)
   s.flatMap{f => 
        val nameIngreds =(for (x<-f) yield {
-        val ingreds = getIngredients(x._1, db)
-        ingreds.map(i => (x._2, i, x._3))
+        val ingreds = getIngredients(x._1._1, db)
+        ingreds.map(i => (x._1._2, i, x._1._3,  x._2, x._1._1))
       })
       Future.sequence(nameIngreds)
       }
@@ -29,75 +29,33 @@ object Featured {
   }
     
   
-  /*
-  def getIngredientsforBestSandwiches(db: Database)(implicit ec: ExecutionContext): Future[Seq[(String, Seq[Int])]] = {
-    val s = getBestSandwiches(db, 4)
-    s.flatMap{f => 
-       val nameIngreds =(for (x<-f) yield {
-        val ingreds = getIngredients(x._1, db)
-        ingreds.map(i => (x._2, i))
-      })
-      Future.sequence(nameIngreds)
-      }
-    
-  }*/
+
   def parseI(i: Int): String = {
-    if(i==1) return "White Bread"
-    else if(i==2) return "Wheat Bread"
-    else if(i==3) return "Tomato"
-    else if(i==4) return "Lettuce"
-    else if(i==5) return "Cheddar"
-    else if(i==6) return "Swiss"
-    else if(i==7) return "Salt"
-    else if(i==8) return "Pepper"
-    else if(i==9) return "Oil"
-    else if(i==10) return "Mayonnaise"
-    else if(i==11) return "Mustard"
-    else if(i==12) return "Chicken"
-    else if(i==13) return "Ham"
-    else return "Turkey"
+    if(i==1)  "White Bread"
+    else if(i==2)  "Wheat Bread"
+    else if(i==3)  "Tomato"
+    else if(i==4)  "Lettuce"
+    else if(i==5)  "Cheddar"
+    else if(i==6)  "Swiss"
+    else if(i==7)  "Salt"
+    else if(i==8)  "Pepper"
+    else if(i==9)  "Oil"
+    else if(i==10) "Mayonnaise"
+    else if(i==11)  "Mustard"
+    else if(i==12) "Chicken"
+    else if(i==13)  "Ham"
+    else  "Turkey"
   }
 
-  /*
-  
-  def attemptingJoins(db: Database)(implicit ec: ExecutionContext) = {
-    val sandwicheswithIngredients = for {  def getBestSandwichCreators (db: Database)(implicit ec: ExecutionContext): Future[Seq[(Int, String, String)]] = {
-    val s = getBestSandwiches(db, 4)
-    
-    
-  }
-      a <-Sandwiches
-      r <-Sandwichingredient
-      if(a.id===r.sid)
-    } yield (a, r)
-    val sandwichesIngredsLikes = for {
-      a<-sandwicheswithIngredients 
-      r<-Likes
-      if(a._1.id===r.sid)
-    } yield (a, r)
-    
-  }
-  
-  */
-  /*
-  def getBestSandwiches(db: Database, num: Int)(implicit ec: ExecutionContext): Future[Seq[(Int, String)]] = {
-    val sandFuture = getSandwiches(db)
-    sandFuture.flatMap { f =>
-          val sandwichAndLikes = (for (x <- f) yield {
-            val qf = getLikes(x._1, db).map(f=> f.length)
-            qf.map(q => (x, q))
-          })
-          Future.sequence(sandwichAndLikes).map(_.sortBy(t => -t._2).take(num).map(_._1)) 
-    }
-  }*/
-  def getBestSandwichesU(db: Database, num: Int)(implicit ec: ExecutionContext): Future[Seq[(Int, String, String)]] = {
+
+  def getBestSandwichesU(db: Database, num: Int)(implicit ec: ExecutionContext): Future[Seq[((Int, String, String), Int)]] = {
     val sandFuture = getSandwichesWithMaker(db)
     sandFuture.flatMap { f =>
           val sandwichAndLikes = (for (x <- f) yield {
             val qf = getLikes(x._1, db).map(f=> f.length)
             qf.map(q => (x, q))
           })
-          Future.sequence(sandwichAndLikes).map(_.sortBy(t => -t._2).take(num).map(_._1)) 
+          Future.sequence(sandwichAndLikes).map(_.sortBy(t => -t._2).take(num)) 
     }
   }
   
@@ -121,14 +79,7 @@ object Featured {
       Future.sequence(sandwichAndUser)
     }
   }
-  /*
-  def getSandwiches(db:Database)(implicit ec: ExecutionContext): Future[Seq[(Int, String)]] = {
-    db.run {
-        (for (s <- Sandwiches) yield (s.id, s.name)).result
-     }
-    
-  }*/
-  
+
   def getSandwichesU(db:Database)(implicit ec: ExecutionContext): Future[Seq[(Int, String, Int)]] = {
     db.run {
         (for (s <- Sandwiches) yield (s.id, s.name, s.uid)).result

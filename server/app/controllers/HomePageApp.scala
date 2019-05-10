@@ -1,6 +1,5 @@
 package controllers
 
-import javax.inject._
 import edu.trinity.webapps.shared.SharedMessages
 import play.api.mvc._
 import play.api.data._
@@ -9,12 +8,6 @@ import javax.inject._
 import scala.concurrent.Future
 import models.Tables._
 import slick.jdbc.MySQLProfile.api._
-
-
-
-import models._
-//import Tables._
-
 import play.api.db.slick.DatabaseConfigProvider
 import play.api.db.slick.HasDatabaseConfigProvider
 
@@ -34,7 +27,13 @@ class HomePageApp @Inject() (protected val dbConfigProvider: DatabaseConfigProvi
   //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
   def index = Action.async { implicit request =>
+<<<<<<< HEAD
     models.Featured.getBestSandwichIngredientsWithCreators(db: Database).map(f=> Ok(views.html.index(f)))
+=======
+   
+    models.Featured.getBestSandwichIngredientsWithCreators(db: Database, 4).map(f=> Ok(views.html.index(f)))
+ 
+>>>>>>> 1e0e9cf29028490160f4734c5a1045110c22893a
   }
 
 

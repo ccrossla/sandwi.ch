@@ -1,22 +1,70 @@
-@(bestSandwiches: Seq[(String, Seq[Int], String)])
+@(bestSandwiches: Seq[(String, Seq[Int], String, Int, Int)])
 
 
 @main("Play with Scala.js") {
-	<div class="sandwichList">
-		<h1>Welcome to Sandwi.ch!</h1>
-		<ul>
-  			<li>Featured Sandwiches: </li>
-		</ul>
-		
-			@for(x<-bestSandwiches) {
-				<h2>@x._1</h2>
-				<ol>
-				@for(y <- x._2) {
-					<li>@models.Featured.parseI(y)</li>
-				}
-				</ol>
-				<p>made by: @x._3 </p>
-			}
+	<div class="features">
+		<h1 id="title">Welcome to Sandwi.ch! </h1>
+	
+		 <table>
+        	<thead>
+            	<tr id="table-header">
+                	<b>
+                    	<th colspan="2"><h3>Featured Sandwiches</h3></th>
+                    	
+                    </b>
+                </tr>
+            </thead>
+            <tbody id="table-data">
+			
+  				<tr>
+  					<td class="sandwich">				
+  						<div class="scrolley" >
+							<h3><u>@bestSandwiches(0)._1</u></h3>
+							@for(y <-bestSandwiches(0)._2) {
+							<p class="ingredient">@models.Featured.parseI(y)</p>
+							}
+							<h5>Created by: @bestSandwiches(0)._3 </h5>
+							<p class="likey">Total likes: @bestSandwiches(0)._4</p>
+						</div><link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+					</td>
+  					<td class="sandwich">				
+  						<div class="scrolley">
+							<h3><u>@bestSandwiches(1)._1</u></h3>
+							
+							@for(y <-bestSandwiches(1)._2) {
+							<p class="ingredient">@models.Featured.parseI(y)</p>
+							}
+							<h5>Created by: @bestSandwiches(1)._3 </h5>
+							<p class="likey">Total likes: @bestSandwiches(1)._4</p>
+						</div>
+					</td>
+  				</tr>
+  			   	<tr>
+  					<td class="sandwich">				
+  						<div class="scrolley">
+							<h3><u>@bestSandwiches(2)._1</u></h3>
+							@for(y <-bestSandwiches(2)._2) {
+							<p class="ingredient">@models.Featured.parseI(y)</p>
+							}
+							<h5>Created by: @bestSandwiches(2)._3 </h5>
+							<p class="likey">Total likes: @bestSandwiches(2)._4</p>
+						</div>
+					</td>
+  					<td class="sandwich">				
+  						<div class="scrolley">
+							<h3><u>@bestSandwiches(3)._1</u></h3>
+							@for(y <-bestSandwiches(3)._2) {
+							<p class="ingredient">@models.Featured.parseI(y)</p>
+							}
+							<h5>Created by: @bestSandwiches(3)._3 </h5>
+							<p class="likey">Total likes: @bestSandwiches(3)._4</p>
+						</div>
+					</td>
+  				</tr>
+			
+            </tbody>
+    	</table>
+
 			
 	</div>
 }

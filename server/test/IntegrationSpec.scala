@@ -13,9 +13,9 @@ class IntegrationSpec extends Specification {
   "Application" should {
     "work from within a browser" in new WithBrowser {
 
-      browser.goTo("http://localhost:" + port)
+      browser.goTo("http://pandora06.cs.trinity.edu:9000")
 
-      browser.pageSource must contain("shouts out")
+      browser.pageSource must contain("Login for Sandwi.ch")
     }
   }
 }

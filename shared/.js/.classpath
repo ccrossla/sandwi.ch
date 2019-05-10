@@ -1,4 +1,5 @@
 <classpath>
+<<<<<<< HEAD
   <classpathentry output="-users-qbutterf-sandwi.ch-shared-src-main-scala" kind="src" path="-users-qbutterf-sandwi.ch-shared-src-main-scala"/>
   <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"></classpathentry>
   <classpathentry sourcepath="/users/qbutterf/.ivy2/cache/org.scala-js/scalajs-library_2.12/srcs/scalajs-library_2.12-0.6.23-sources.jar" kind="lib" path="/users/qbutterf/.ivy2/cache/org.scala-js/scalajs-library_2.12/jars/scalajs-library_2.12-0.6.23.jar">
@@ -9,6 +10,18 @@
   <classpathentry sourcepath="/users/qbutterf/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/srcs/scalajs-test-interface_2.12-0.6.23-sources.jar" kind="lib" path="/users/qbutterf/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/jars/scalajs-test-interface_2.12-0.6.23.jar">
     <attributes>
       <attribute name="javadoc_location" value="jar:file:/users/qbutterf/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/docs/scalajs-test-interface_2.12-0.6.23-javadoc.jar!/"/>
+=======
+  <classpathentry output="-users-dflood-LeWebApps-sandwi.ch-shared-src-main-scala" kind="src" path="-users-dflood-LeWebApps-sandwi.ch-shared-src-main-scala"/>
+  <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"></classpathentry>
+  <classpathentry sourcepath="/users/dflood/.ivy2/cache/org.scala-js/scalajs-library_2.12/srcs/scalajs-library_2.12-0.6.23-sources.jar" kind="lib" path="/users/dflood/.ivy2/cache/org.scala-js/scalajs-library_2.12/jars/scalajs-library_2.12-0.6.23.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/users/dflood/.ivy2/cache/org.scala-js/scalajs-library_2.12/docs/scalajs-library_2.12-0.6.23-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/users/dflood/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/srcs/scalajs-test-interface_2.12-0.6.23-sources.jar" kind="lib" path="/users/dflood/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/jars/scalajs-test-interface_2.12-0.6.23.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/users/dflood/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/docs/scalajs-test-interface_2.12-0.6.23-javadoc.jar!/"/>
+>>>>>>> 1e0e9cf29028490160f4734c5a1045110c22893a
     </attributes>
   </classpathentry>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>

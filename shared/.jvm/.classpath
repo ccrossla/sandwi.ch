@@ -1,5 +1,9 @@
 <classpath>
+<<<<<<< HEAD
   <classpathentry output="-users-qbutterf-sandwi.ch-shared-src-main-scala" kind="src" path="-users-qbutterf-sandwi.ch-shared-src-main-scala"/>
+=======
+  <classpathentry output="-users-dflood-LeWebApps-sandwi.ch-shared-src-main-scala" kind="src" path="-users-dflood-LeWebApps-sandwi.ch-shared-src-main-scala"/>
+>>>>>>> 1e0e9cf29028490160f4734c5a1045110c22893a
   <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"></classpathentry>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
   <classpathentry kind="output" path="bin"/>
