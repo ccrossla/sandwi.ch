@@ -27,9 +27,13 @@ class HomePageApp @Inject() (protected val dbConfigProvider: DatabaseConfigProvi
   //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
   def index = Action.async { implicit request =>
+<<<<<<< HEAD
+    models.Featured.getBestSandwichIngredientsWithCreators(db: Database).map(f=> Ok(views.html.index(f)))
+=======
    
     models.Featured.getBestSandwichIngredientsWithCreators(db: Database, 4).map(f=> Ok(views.html.index(request.session("username"), f)))
  
+>>>>>>> 1e0e9cf29028490160f4734c5a1045110c22893a
   }
 
 

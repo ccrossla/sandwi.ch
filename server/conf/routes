@@ -7,6 +7,12 @@ GET    /                        controllers.HomePageApp.index
 
 #Sandwich home
 
+# Builder page
+GET    /addIngredient  			controllers.SandwichMaker.addIngredient
+
+GET		/builder				controllers.SandwichMaker.build
+GET		/rebuild				controllers.SandwichMaker.rebuild
+#GET     /addSandwich  			controllers.SandwichMaker.createSandwich(sid: Int)
 
 POST   /userLogin               controllers.Application.userLogin
 POST   /createAUser             controllers.Application.createAUser

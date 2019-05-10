@@ -4,7 +4,11 @@
 		module="sandwich-s19-shared_sjs0.6_2.12"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
+<<<<<<< HEAD
+		publication="20190509133856"
+=======
 		publication="20190509181332"
+>>>>>>> 1e0e9cf29028490160f4734c5a1045110c22893a
 	>
 		<description>
 		sandwich-S19-Shared

@@ -11,6 +11,46 @@
   </natures>
   <linkedResources>
     <link>
+<<<<<<< HEAD
+      <name>-users-qbutterf-sandwi.ch-shared-src-main-scala-2.12</name>
+      <type>2</type>
+      <location>/users/qbutterf/sandwi.ch/shared/src/main/scala-2.12</location>
+    </link>
+    <link>
+      <name>-users-qbutterf-sandwi.ch-shared-src-main-scala-2.12</name>
+      <type>2</type>
+      <location>/users/qbutterf/sandwi.ch/shared/src/main/scala-2.12</location>
+    </link>
+    <link>
+      <name>-users-qbutterf-sandwi.ch-shared-src-main-scala</name>
+      <type>2</type>
+      <location>/users/qbutterf/sandwi.ch/shared/src/main/scala</location>
+    </link>
+    <link>
+      <name>-users-qbutterf-sandwi.ch-shared-src-main-scala</name>
+      <type>2</type>
+      <location>/users/qbutterf/sandwi.ch/shared/src/main/scala</location>
+    </link>
+    <link>
+      <name>-users-qbutterf-sandwi.ch-shared-src-test-scala-2.12</name>
+      <type>2</type>
+      <location>/users/qbutterf/sandwi.ch/shared/src/test/scala-2.12</location>
+    </link>
+    <link>
+      <name>-users-qbutterf-sandwi.ch-shared-src-test-scala-2.12</name>
+      <type>2</type>
+      <location>/users/qbutterf/sandwi.ch/shared/src/test/scala-2.12</location>
+    </link>
+    <link>
+      <name>-users-qbutterf-sandwi.ch-shared-src-test-scala</name>
+      <type>2</type>
+      <location>/users/qbutterf/sandwi.ch/shared/src/test/scala</location>
+    </link>
+    <link>
+      <name>-users-qbutterf-sandwi.ch-shared-src-test-scala</name>
+      <type>2</type>
+      <location>/users/qbutterf/sandwi.ch/shared/src/test/scala</location>
+=======
       <name>-users-dflood-LeWebApps-sandwi.ch-shared-src-main-scala-2.12</name>
       <type>2</type>
       <location>/users/dflood/LeWebApps/sandwi.ch/shared/src/main/scala-2.12</location>
@@ -49,6 +89,7 @@
       <name>-users-dflood-LeWebApps-sandwi.ch-shared-src-test-scala</name>
       <type>2</type>
       <location>/users/dflood/LeWebApps/sandwi.ch/shared/src/test/scala</location>
+>>>>>>> 1e0e9cf29028490160f4734c5a1045110c22893a
     </link>
   </linkedResources>
 </projectDescription>

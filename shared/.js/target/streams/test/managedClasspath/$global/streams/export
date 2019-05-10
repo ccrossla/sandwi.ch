@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+/users/qbutterf/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.5.jar:/users/qbutterf/.ivy2/cache/org.scala-js/scalajs-library_2.12/jars/scalajs-library_2.12-0.6.23.jar:/users/qbutterf/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/jars/scalajs-test-interface_2.12-0.6.23.jar
+=======
 /users/dflood/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.5.jar:/users/dflood/.ivy2/cache/org.scala-js/scalajs-library_2.12/jars/scalajs-library_2.12-0.6.23.jar:/users/dflood/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/jars/scalajs-test-interface_2.12-0.6.23.jar
+>>>>>>> 1e0e9cf29028490160f4734c5a1045110c22893a
