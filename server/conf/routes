@@ -3,7 +3,7 @@
 # ~~~~
 
 # Home page
-GET    /                        controllers.HomePageApp.index
+GET    /userWelcome                       controllers.HomePageApp.index
 
 #Sandwich home
 
@@ -21,7 +21,7 @@ POST   /userLogin               controllers.Application.userLogin
 + nocsrf
 POST   /createAUser             controllers.Application.createAUser
 
-GET    /userWelcome             controllers.Application.userWelcome
+GET    /            			controllers.Application.userWelcome
 GET    /userLogout              controllers.Application.userLogout
 
 #All Sandwiches page
